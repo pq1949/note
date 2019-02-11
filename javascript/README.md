@@ -16,6 +16,7 @@
       * 对于纯对象的遍历，for..in要厉害一些
       * for..of迭代更合适，因为还可以中断；如果需要知道索引，则forEach()更合适
       * Object.keys()，Object.values()，Object.entries() 可以配合他们使用
+      * 注意:`for-of`循环不支持普通对象,但是如果你想迭代一个对象的属性,可以使用`for-in`循环(这也是它的本职工作)或者内建的`Object.keys()方法`
 
 https://www.zhangxinxu.com/wordpress/2018/08/for-in-es6-for-of/
 
