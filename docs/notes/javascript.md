@@ -21,4 +21,7 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 https://www.zhangxinxu.com/wordpress/2018/08/for-in-es6-for-of/
 
 
-####
+#### [闭包是函数和声明该函数的词法环境的组合 MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
+  闭包是由函数以及创建该函数的词法环境组合而成。这个环境包含了这个闭包创建时所能访问的所有局部变量
+  https://segmentfault.com/a/1190000011612140
+  https://juejin.im/entry/57d60f7067f3560057e37e25

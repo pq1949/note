@@ -46,3 +46,6 @@
   * [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown)
   * [esdoc](https://github.com/esdoc/esdoc)
   * [apidoc](https://github.com/apidoc/apidoc)
+
+### 表情
+  * [emoji markup](https://gist.github.com/pq1949/540172a2d4e5db33980f99a9d2c8c5cc)
