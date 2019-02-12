@@ -1,4 +1,4 @@
-* [Home](/readme)
+* [Home](/README)
 * [css](/notes/css)
 * [designPatterns](/notes/designPatterns)
 * [dom](/notes/dom)
