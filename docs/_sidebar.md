@@ -7,4 +7,5 @@
 * [performance](/notes/performance)
 * [react](/notes/react)
 * [record](/notes/record)
+* [goodBlog](/notes/goodBlog)
 * [linux](https://github.com/pq1949/guide)
