@@ -43,3 +43,6 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 
 ## 位运算符在JS中的妙用
   * https://juejin.im/post/5a98ea2f6fb9a028bb186f34
+
+## TypeScript
+  * TypeScript 入门教程 https://ts.xcatliu.com/

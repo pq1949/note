@@ -49,3 +49,10 @@
 
 ### 表情
   * [emoji markup](https://gist.github.com/pq1949/540172a2d4e5db33980f99a9d2c8c5cc)
+
+### 印记中文出品，唯一与官方文档同步的中文文档
+  * https://www.docschina.org/
+
+
+### 排序动画演示
+  * https://visualgo.net/en/sorting  ⭐️⭐️⭐️⭐️⭐️
