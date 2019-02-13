@@ -8,4 +8,5 @@
 * [react](/notes/react)
 * [record](/notes/record)
 * [goodBlog](/notes/goodBlog)
+* [interview](/notes/interview)
 * [linux](https://github.com/pq1949/guide)
