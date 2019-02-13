@@ -40,3 +40,6 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 
 ## You Don't Know JS
   * https://github.com/getify/You-Dont-Know-JS
+
+## 位运算符在JS中的妙用
+  * https://juejin.im/post/5a98ea2f6fb9a028bb186f34
