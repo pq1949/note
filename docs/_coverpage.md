@@ -13,7 +13,10 @@
 </style>
 <img src="https://avatars2.githubusercontent.com/u/9245399?s=60">
 
-# 🍭 My Study Notes
+# 🍭 My Study Note
 
 [GitHub](https://github.com/pq1949/note)
 [Get Started](/README)
+
+
+![](/imgs/bg.jpeg)

@@ -3,16 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>My Study Note</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="/imgs/logo.ico">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 </head>
 <style>
   .sidebar, body, input, .sidebar-toggle{
     background-color: #f3f2ee !important;
+  }
+  .mask {
+    display: none !important;
+  }
+
+  .app-name-link img {
+    width: 50%;
   }
 </style>
 <body>
@@ -21,6 +29,8 @@
     window.$docsify = {
       name: 'note book',
       repo: 'https://github.com/pq1949/note',
+      logo: '/imgs/logo.png',
+      // themeColor: '#5FE5CF',
       coverpage: true,
       onlyCover: true,
       maxLevel: 2,
