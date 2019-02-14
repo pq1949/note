@@ -9,4 +9,5 @@
 * [record](/notes/record)
 * [goodBlog](/notes/goodBlog)
 * [interview](/notes/interview)
+* [leetCode](/leetcode/_sidebar)
 * [linux](https://github.com/pq1949/guide)

@@ -10,11 +10,16 @@
   <link rel="icon" href="/imgs/logo.ico">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 </head>
 <style>
-  .sidebar, body, input, .sidebar-toggle{
+  .sidebar,
+  body,
+  input,
+  .sidebar-toggle {
     background-color: #f3f2ee !important;
   }
+
   .mask {
     display: none !important;
   }
@@ -23,6 +28,7 @@
     width: 50%;
   }
 </style>
+
 <body>
   <div id="app"></div>
   <script>
@@ -43,6 +49,7 @@
       loadSidebar: true
     }
   </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
