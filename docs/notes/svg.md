@@ -11,6 +11,10 @@
   * [TAT.tennylv线条之美，玩转SVG线条动画](http://www.alloyteam.com/2017/02/the-beauty-of-the-lines-break-lines-svg-animation/)
   * [张鑫旭 未来必热：SVG Sprite技术介绍](!https://www.zhangxinxu.com/wordpress/2014/07/introduce-svg-sprite-technology/)⭐️⭐️⭐️⭐️️️⭐️️️
   * [奇舞团博客 SVG动画实践](https://75team.com/post/svg-animation-in-action.html)⭐️⭐️️️⭐️️️
+  * [阮一峰 SVG 图像入门教程](http://www.ruanyifeng.com/blog/2018/08/svg.html)⭐️️️⭐️️️
+  * [[译] 深入浅出 SVG](https://juejin.im/post/5ad84f296fb9a045e8011be1)⭐️⭐️⭐️️️⭐️️️
+  * [20 个有用的 SVG 工具，提供更好的图像处理](https://www.oschina.net/translate/20-useful-svg-tools-for-better-graphics)
+  * [在线制作svg](https://editor.method.ac/)⭐️⭐️⭐️️️⭐️️️
 
 
 

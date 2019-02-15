@@ -49,3 +49,13 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 
 ## 动手写js沙箱
   * https://www.villainhr.com/page/2016/09/03/%E5%8A%A8%E6%89%8B%E5%86%99js%E6%B2%99%E7%AE%B1
+
+## 33-js-concepts  ⭐️⭐️⭐️⭐️
+33 concepts every JavaScript developer should know.
+
+ https://github.com/leonardomso/33-js-concepts
+
+## 30-seconds-of-code ⭐️⭐️⭐️⭐️
+Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.
+
+https://github.com/30-seconds/30-seconds-of-code?utm_source=gold_browser_extension
