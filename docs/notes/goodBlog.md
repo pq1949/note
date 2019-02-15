@@ -12,3 +12,11 @@ http://www.dailichun.com/2018/03/12/whenyouenteraurl.html
 https://github.com/mqyqingfeng/Blog
 
 [JavaScript深入之bind的模拟实现](https://github.com/mqyqingfeng/Blog/issues/12)⭐️
+
+
+### oxxo
+https://www.oxxostudio.tw/
+
+
+###  villainhr
+https://www.villainhr.com/

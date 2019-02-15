@@ -46,3 +46,6 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 
 ## TypeScript
   * TypeScript 入门教程 https://ts.xcatliu.com/
+
+## 动手写js沙箱
+  * https://www.villainhr.com/page/2016/09/03/%E5%8A%A8%E6%89%8B%E5%86%99js%E6%B2%99%E7%AE%B1

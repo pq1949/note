@@ -1,5 +1,6 @@
 * [Home](/README)
 * [css](/notes/css)
+* [svg](/notes/svg)
 * [designPatterns](/notes/designPatterns)
 * [dom](/notes/dom)
 * [javascript](/notes/javascript)
@@ -10,4 +11,5 @@
 * [goodBlog](/notes/goodBlog)
 * [interview](/notes/interview)
 * [leetCode](/leetcode/_sidebar)
+* [jsCode](/jscode/_sidebar)
 * [linux](https://github.com/pq1949/guide)
