@@ -59,3 +59,13 @@ for in 和 Object.create(null) 结合 就不用担心遍历到原型上的可枚
 Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.
 
 https://github.com/30-seconds/30-seconds-of-code?utm_source=gold_browser_extension
+
+
+## JavaScript 标准参考教程⭐️⭐️
+
+http://javascript.ruanyifeng.com/
+
+
+## Javascript中的with关键字
+
+http://luopq.com/2016/02/14/js-with-keyword/  (印象笔记有备份)

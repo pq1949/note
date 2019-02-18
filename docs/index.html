@@ -27,9 +27,34 @@
   .app-name-link img {
     width: 50%;
   }
+
+  .refresh_index {
+    position: fixed;
+    left: 42px;
+    bottom: 7px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .refresh_index img {
+    height: 20px;
+    width: 20px;
+  }
 </style>
+<script>
+  function refresh_index(){
+    if(localStorage && localStorage.removeItem) {
+      localStorage.removeItem('docsify.search.index')
+      localStorage.removeItem('docsify.search.expires')
+      location.reload();
+    }
+  }
+</script>
 
 <body>
+  <div class="refresh_index" onclick='refresh_index()' title="重建索引">
+    <img src="./imgs/refresh.svg" alt="">
+  </div>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -39,7 +64,7 @@
       // themeColor: '#5FE5CF',
       coverpage: true,
       onlyCover: true,
-      maxLevel: 2,
+      maxLevel: 3,
       search: {
         placeholder: '⚡️ Type to search ',
         noData: '🐷  No Results! ',

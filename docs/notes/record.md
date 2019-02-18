@@ -56,3 +56,10 @@
 
 ### 排序动画演示
   * https://visualgo.net/en/sorting  ⭐️⭐️⭐️⭐️⭐️
+
+
+### 在线制作PPT
+A framework for easily creating beautiful presentations using HTML
+
+  * https://github.com/hakimel/reveal.js?utm_source=gold_browser_extension#full-setup
+  * [Online Editor](https://slides.com/?ref=github)
