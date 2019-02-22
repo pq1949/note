@@ -68,5 +68,21 @@ A framework for easily creating beautiful presentations using HTML
 ### 搭建ssh服务器
   * https://github.com/Austin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B
 
+ssr安装脚本
+
+```bash
+wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+```
+
+ssr备用脚本
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+```
+
+谷歌BBR加速脚本
+```bash
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+```
+
 ### 运行流畅的客服系统 ⭐️⭐️⭐️⭐️⭐️
   * https://www.intercom.com/
