@@ -1,3 +1,5 @@
+## 参考链接
+
 ###  Tailwind Box Shadows css 参考
 * https://tailwindcss.com/docs/shadows
 
@@ -16,3 +18,11 @@ https://qishaoxuan.github.io/css_tricks/
 
 ### flex练习⭐️⭐️
 https://pq1949.github.io/learn-css/flex%E7%BB%83%E4%B9%A0.html
+
+
+
+## CSS基础
+
+### HTML常见元素
+
+![css](/../imgs/css1.png)

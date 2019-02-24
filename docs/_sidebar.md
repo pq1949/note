@@ -11,5 +11,5 @@
 * [goodBlog](/notes/goodBlog)
 * [interview](/notes/interview)
 * [leetCode](/leetcode/_sidebar)
-* [jsCode](/jscode/_sidebar)
+* [jsCode](/jscode/snippet)
 * [linux](https://github.com/pq1949/guide)

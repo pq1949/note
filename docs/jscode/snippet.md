@@ -1,4 +1,123 @@
 
+### 大文件
+
+```js
+var fs = require('fs')
+
+let file = fs.createWriteStream('test2.txt',{flags: 'a'})
+
+let str = ''
+
+for(let i =0 ;i < 1024 ; i++) {
+  str += '0'
+}
+for (let i = 0; i < 1024 * 1024 * 2; i++) {
+  file.write(str)
+}
+
+
+
+file.end('end!', () => {
+  console.log('end!')
+})
+
+```
+
+### 刷新页面
+
+ * `location.reload` 类似于你浏览器上的刷新页面按钮
+ * `history.go(0)` 返回当前页 `history.go(-1)` 返回上一页(括号中写-2代表返回上两页)  `history.back()` 返回上一页  `history.forward()` 返回下一页
+ * `location=location`
+ * `location=location.href`
+ * `location.replace(location)` 用一个新文档取代当前文档 **使用replace方法之后，不能通过“前进”和“后退”来访问已经被替换的URL**
+ * `location.replace(location.href)`
+ * `<meta http-equiv="refresh" content="5">` 每隔5秒刷新一次页面
+ * `<meta http-equiv="refresh" content="20;url=https://www.baidu.com">`  20秒之后页面跳转到baidu中，通常运用到404页面`
+
+
+https://www.jianshu.com/p/d8176460efc4
+
+https://www.haorooms.com/post/js_refrash
+
+### 绑定事件
+
+```js
+var addEvent = (function() {
+    if (document.addEventListener) {
+        return function (element, type, handler) { //这里，可以避免了重复检测
+            element.addEventListener(type, handler, false);
+        }
+    } else if (document.attachEvent) {
+        return function (element, type, handler) { //这里，可以避免了重复检测
+            element.attachEvent('on' + type, handler);
+        };
+    }
+})();
+```
+
+```js
+var addEvent = function(element, type, handler) {
+    if (document.addEventListener) {  //每次都要检测
+        element.addEventListener(type, handler, false);
+    } else if (document.attachEvent) {
+        element.attachEvent('on' + type, handler);
+    }
+};
+```
+
+```js
+// javascript与HTML之间的交互是通过事件实现的。
+// 由于不同的浏览器提供了相似但不同的API。给项目开发带来很多麻烦。
+// 外观模式(门面模式)，是一种相对简单而又无处不在的模式。
+// 外观模式提供一个高层的简化的接口，这个接口使得客户端或子系统更加方便调用。
+// 请使用外观模式实现跨浏览器事件处理
+function addEvent (el, type, fn) {
+  if (document.addEventListener) {
+    el.addEventListener(type, fn, false);
+  } else if (document.attachEvent) {
+    el.attachEvent('on' + type, fn);
+  } else {
+    el['on' + type] = fn;
+  }
+}
+
+var util = {}
+util.Event = {
+  getEvent: function (e) {
+    return e
+  },
+  getTarget: function (e) {
+    return e.target
+  },
+  stopPropagation: function (e) {
+    if (e && e.stopPropagation) {
+      e.stopPropagation()
+    } else {
+      window.event.cancelBubble = true;
+    }
+  },
+  preventDefault: function (e) {
+    if (e && e.preventDefault) {
+      e.preventDefault()
+    } else {
+      window.event.returnValue = false;
+    }
+  },
+  stopEvent: function (e) {
+    return false;
+  }
+};
+
+addEvent(document.getElementById('example'), 'click', function (e) {
+  // Who clicked me.
+  console.log(util.Event.getTarget(e));
+  // Stop propagating and prevent the default action.
+  util.Event.stopEvent(e);
+});
+
+```
+
+
 ### compose (redux)
 ```js
 /**
@@ -26,7 +145,7 @@ export default function compose(...funcs) {
 
 ```
 
-### 纯对象判断 isPlainObject
+### 纯对象判断 isPlainObject  (redux)
 ```js
 /**
  * @param {any} obj The object to inspect.
@@ -45,8 +164,17 @@ export default function isPlainObject(obj) {
 
 ```
 
-### 获取随机的字符串
+### 获取随机的字符串 (redux)
 
 ```js
 Math.random().toString(36).substring(7)
+```
+
+### 交换数组中两个元素 (react-spring-examples)
+
+```js
+// Swaps two values in an array
+const swap = (array, from, to) => (
+  array.splice(to, 0, ...array.splice(from, 1)), array
+)
 ```

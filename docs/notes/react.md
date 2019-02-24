@@ -5,6 +5,7 @@
 ### react 动画库
   * [react-motion](https://github.com/chenglou/react-motion) ⭐️⭐️⭐️⭐️⭐️
     * [react-motion-drawer](https://github.com/stoeffel/react-motion-drawer)
+  * [react-spring](https://github.com/react-spring/react-spring)⭐️⭐️⭐️⭐️⭐️
 
 ### 数据流
   * [MobX](https://suprise.gitbooks.io/mobx-cn/content/fp.html)
@@ -20,3 +21,9 @@
     => `compose(...chain)` => `a(b(c(d(e(store.dispatch)))))`
 
     ![redux](../imgs/redux.png)
+
+### Hooks, React Render props, HOC,  Mixins
+
+ * [[译] 使用 Render props 吧！](https://juejin.im/post/5a3087746fb9a0450c4963a5)
+ * [Render Props 官网](https://reactjs.org/docs/render-props.html)
+ * [React v16.7 "Hooks" - What to Expect](https://zhuanlan.zhihu.com/p/47684983)
