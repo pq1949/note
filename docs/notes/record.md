@@ -26,6 +26,7 @@
 ### 服务资源
   * [chinese-xinhua 中华新华字典数据库。包括歇后语，成语，词语，汉字](https://github.com/pwxcoo/chinese-xinhua)
   * [知乎无限 live 数据库，仅供学术用途](https://github.com/calpa/zhihu-unlimited-live/blob/master/db.json)
+  * [网易云音乐 Node.js API service](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
 
 ### logo制作
