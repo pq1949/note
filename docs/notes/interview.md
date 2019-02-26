@@ -40,3 +40,10 @@ https://segmentfault.com/a/1190000016885832
 小程序不可以renderProps
 
 ### 长列表加载优化
+
+
+### git 合并之前的提交 git面试
+
+Cherry-Pick https://juejin.im/post/5925a2d9a22b9d0058b0fd9b
+
+git rebase
