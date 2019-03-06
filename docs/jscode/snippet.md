@@ -178,3 +178,12 @@ const swap = (array, from, to) => (
   array.splice(to, 0, ...array.splice(from, 1)), array
 )
 ```
+
+
+### 浏览器控制台加载脚本
+
+```js
+var __s = document.createElement('script');
+__s.src = 'https://cdn.bootcss.com/gpu.js/1.10.4/gpu-core.min.js';
+document.getElementsByTagName('head')[0].appendChild(__s);
+```

@@ -12,4 +12,5 @@
 * [interview](/notes/interview)
 * [leetCode](/leetcode/_sidebar)
 * [jsCode](/jscode/snippet)
+* [chrome](/notes/chrome)
 * [linux](https://github.com/pq1949/guide)
