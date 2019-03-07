@@ -93,3 +93,7 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 
   `phacility`  https://phacility.com  [预览](https://secure.phabricator.com/D20083)
   `gerrit` https://www.gerritcodereview.com/
+
+### terminal for Windows⭐️⭐️⭐️⭐️⭐️
+
+[MobaXterm](https://mobaxterm.mobatek.net/)
