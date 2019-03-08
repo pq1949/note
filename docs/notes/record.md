@@ -111,3 +111,25 @@ yarn config set https-proxy http://127.0.0.1:1080
 ```
 
 https://github.com/yarnpkg/yarn/issues/4890
+
+
+### create-react-app 使用docz报错
+
+`package.json`文件中加入
+
+```json
+"resolutions": {
+  "ansi-styles": "^3.2.0"
+}
+```
+删除lock文件重新install
+```
+rm yarn.lock && yarn
+```
+
+关于 `resolutions` 可以看[这里](https://yarnpkg.com/lang/zh-hans/docs/selective-version-resolutions/)，yarn专门用来解决指定安装特定版本包的字段
+
+npm中没有对应的字段，不过可以用 `npm-force-resolutions`这个来解决 略显麻烦 所以还是用yarn吧
+
+
+https://stackoverflow.com/questions/52416312/npm-equivalent-of-yarn-resolutions
