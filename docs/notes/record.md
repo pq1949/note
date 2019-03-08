@@ -131,5 +131,6 @@ rm yarn.lock && yarn
 
 npm中没有对应的字段，不过可以用 `npm-force-resolutions`这个来解决 略显麻烦 所以还是用yarn吧
 
+https://github.com/pedronauck/docz/issues/536
 
 https://stackoverflow.com/questions/52416312/npm-equivalent-of-yarn-resolutions
