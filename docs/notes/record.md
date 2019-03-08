@@ -97,3 +97,15 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 ### terminal for Windows⭐️⭐️⭐️⭐️⭐️
 
 [MobaXterm](https://mobaxterm.mobatek.net/)
+
+
+
+### yarn network error
+
+```
+info There appears to be trouble with your network connection. Retrying...
+```
+```bash
+yarn config set proxy http://127.0.0.1:1080
+yarn config set https-proxy http://127.0.0.1:1080
+```
