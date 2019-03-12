@@ -134,3 +134,84 @@ npm中没有对应的字段，不过可以用 `npm-force-resolutions`这个来�
 https://github.com/pedronauck/docz/issues/536
 
 https://stackoverflow.com/questions/52416312/npm-equivalent-of-yarn-resolutions
+
+
+### nginx 配置自签名证书
+
+创建私钥
+```
+openssl genrsa -out server.key 1024
+```
+创建证书签名请求 (Common Name要填成对应网站的IP或者域名,其他的可忽略)
+```
+openssl req -new -key server.key -out server.csr
+```
+
+创建自签名证书 (可以添加  `-days 3650` 指定10年有效期 )
+```
+openssl x509 -req -in server.csr -signkey server.key -out server.crt
+```
+配置nginx
+
+```
+ server {
+    listen 8082 ssl;
+    ssl_certificate /home/leo/nginx/conf/server.crt;
+    ssl_certificate_key /home/leo/nginx/conf/server.key;
+    location / {
+       alias /home/leo/webim/;
+     }
+   }
+
+```
+
+https://ningyu1.github.io/site/post/51-ssl-cert/
+
+http://blog.harrisonxi.com/2017/02/%E7%BB%99nginx%E5%88%9B%E5%BB%BA%E4%B8%AA%E8%87%AA%E7%AD%BE%E5%90%8DSSL%E8%AF%81%E4%B9%A6.html
+
+
+### CentOS 7 更新nginx
+
+切换到root用户，新建如下文件
+```
+vi /etc/yum.repos.d/nginx.repo
+```
+
+贴入如下内容
+```
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+```
+
+开始更新
+```
+yum update nginx
+```
+
+之前有启动过nginx，需要先停止在更新
+```
+sudo service nginx stop
+```
+
+```
+sudo service nginx start
+```
+
+https://codybonney.com/install-the-latest-version-of-nginx-on-centos-6-and-centos-7-using-yum/
+
+
+### nginx 403 Forbidden
+可能是文件访问权限的问题
+nginx version: nginx/1.14.2
+默认配置文件中是用nginx这个用户启动的，所以会没有权限
+```
+root     21877     1  0 17:42 ?        00:00:00 nginx: master process nginx
+nginx    25148 21877  0 17:54 ?        00:00:00 nginx: worker process
+
+```
+把配置文件的用户改成静态资源所属的用户即可
+
+https://www.jianshu.com/p/e0dadb871894
