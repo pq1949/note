@@ -69,3 +69,35 @@ http://javascript.ruanyifeng.com/
 ## Javascript中的with关键字
 
 http://luopq.com/2016/02/14/js-with-keyword/  (印象笔记有备份)
+
+
+## Promise 串行
+```js
+function runPromiseByQueue(myPromises) {
+  myPromises.reduce(
+    (previousPromise, nextPromise) => previousPromise.then(() => nextPromise()),
+    Promise.resolve()
+  );
+}
+
+const createPromise = (time, id) => () =>
+  new Promise(solve =>
+    setTimeout(() => {
+      console.log("promise", id);
+      solve();
+    }, time)
+  );
+
+runPromiseByQueue([
+  createPromise(3000, 1),
+  createPromise(2000, 2),
+  createPromise(1000, 3)
+]);
+```
+
+https://segmentfault.com/a/1190000016832285
+
+
+## 手写Promise
+
+https://segmentfault.com/a/1190000009809466
