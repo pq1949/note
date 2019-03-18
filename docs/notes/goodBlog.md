@@ -1,4 +1,10 @@
 
+### best-chinese-front-end-blogs ⭐️⭐️⭐️⭐️⭐️
+https://github.com/FrankFang/best-chinese-front-end-blogs
+
+### A delightful list of personal tech blogs ⭐️⭐️⭐️⭐️⭐️
+https://github.com/jkup/awesome-personal-blogs
+
 ### CS-Notes 技术面试必备基础知识⭐️⭐️⭐️⭐️⭐️
 https://github.com/CyC2018/CS-Notes
 
