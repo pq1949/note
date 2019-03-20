@@ -10,3 +10,8 @@ http://webpack.jakoblind.no
 英文  https://webpack.js.org/concepts/
 
 中文 https://www.webpackjs.com/concepts/
+
+
+### Time-saving synchronised browser testing.
+https://browsersync.io/
+http://www.browsersync.cn/
