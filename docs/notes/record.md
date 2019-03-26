@@ -215,3 +215,42 @@ nginx    25148 21877  0 17:54 ?        00:00:00 nginx: worker process
 把配置文件的用户改成静态资源所属的用户即可
 
 https://www.jianshu.com/p/e0dadb871894
+
+
+### git alias 配置
+
+```
+git config --list | grep alias
+alias.lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+alias.st=status
+alias.ci=commit
+alias.co=checkout
+alias.br=branch
+
+
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.st status
+
+
+or edit  .gitconfig
+
+[credential]
+        helper = manager
+[difftool "sourcetree"]
+        cmd = 'd:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+        cmd = 'd:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+        trustExitCode = true
+[core]
+        autocrlf = false
+        safecrlf = true
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+```
