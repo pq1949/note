@@ -259,3 +259,18 @@ or edit  .gitconfig
 ### 找技术库的网站 ⭐️⭐️⭐️
 
 www.awesomes.cn/
+
+
+### webpac在线配置 ⭐️⭐️⭐️
+
+https://createapp.dev/
+
+
+### css裁剪路径 ⭐️⭐️⭐️
+
+https://bennettfeely.com/clippy/
+
+
+### 正则表达式
+
+http://refiddle.com/
