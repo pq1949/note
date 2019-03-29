@@ -38,3 +38,7 @@ https://github.com/poteto/no.lol
 
 ### A list of books 📚and articles 📝 for the discerning web developer to read. ⭐️⭐️⭐️
 https://github.com/twhite96/js-dev-reads#the-problem-confused
+
+
+### package.json 中的 Module 字段是干嘛的 ⭐️⭐️⭐️
+https://github.com/sunyongjian/blog/issues/37
