@@ -63,3 +63,12 @@ pkg.module 字段要指向的应该是一个基于 ES6 模块规范的使用ES5�
 如果它还不识别 pkg.module 字段则会使用我们已经编译成 CommonJS 规范的版本，也不会阻碍打包流程。
 
 https://loveky.github.io/2018/02/26/tree-shaking-and-pkg.module/
+
+
+### 前端同构渲染的思考与实践
+https://mp.weixin.qq.com/s/0SYar2_08sAuwczAP9xt4Q
+
+
+### Optimize your libraries with webpack
+
+https://github.com/GoogleChromeLabs/webpack-libs-optimizations

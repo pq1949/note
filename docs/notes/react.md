@@ -27,3 +27,13 @@
  * [[译] 使用 Render props 吧！](https://juejin.im/post/5a3087746fb9a0450c4963a5)
  * [Render Props 官网](https://reactjs.org/docs/render-props.html)
  * [React v16.7 "Hooks" - What to Expect](https://zhuanlan.zhihu.com/p/47684983)
+
+
+#### A Complete Guide to useEffect ⭐️⭐️⭐️
+
+https://overreacted.io/a-complete-guide-to-useeffect/
+https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/
+
+
+###  深入React fiber 链表和DFS
+https://mp.weixin.qq.com/s/Tp05MoV1bQi7rgpYnz1Xhg
