@@ -42,3 +42,24 @@ https://github.com/twhite96/js-dev-reads#the-problem-confused
 
 ### package.json 中的 Module 字段是干嘛的 ⭐️⭐️⭐️
 https://github.com/sunyongjian/blog/issues/37
+
+pkg.module 字段要指向的应该是一个基于 ES6 模块规范的使用ES5语法书写的模块。
+
+基于 ES6 模块规范是为了用户在使用我们的包时可以享受 Tree Shaking 带来的好处；使用 ES5 语法书写是为了用户在配置 babel 插件时可以放心的屏蔽 node_modules 目录。
+
+我们的 package.json 文件中看起来会是这个样子：
+
+```json
+{
+  "main": "dist/dist.js",
+  "module": "dist/dist.es.js"
+}
+```
+相当于在一个包内同时发布了两种模块规范的版本。
+
+当打包工具遇到我们的模块时：
+
+如果它已经支持 pkg.module 字段则会优先使用 ES6 模块规范的版本，这样可以启用 Tree Shaking 机制。
+如果它还不识别 pkg.module 字段则会使用我们已经编译成 CommonJS 规范的版本，也不会阻碍打包流程。
+
+https://loveky.github.io/2018/02/26/tree-shaking-and-pkg.module/
