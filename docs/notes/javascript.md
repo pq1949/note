@@ -101,3 +101,10 @@ https://segmentfault.com/a/1190000016832285
 ## 手写Promise
 
 https://segmentfault.com/a/1190000009809466
+
+
+## 模块化介绍
+
+[前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
+[模块化七日谈 ](https://juejin.im/post/5aaa37c8f265da23945f365c)
+[Common JS、AMD、CMD 和 UMD 的区别 ](https://github.com/G-Grant/Note/issues/3)
