@@ -37,3 +37,20 @@ https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/
 
 ###  深入React fiber 链表和DFS
 https://mp.weixin.qq.com/s/Tp05MoV1bQi7rgpYnz1Xhg
+
+
+### React ref 的前世今生
+
+使用ref时最好使用函数的形式进行负责，字符串的情况有时会出错，并且也影响性能
+
+遇到一个使用string的ref错误，在这里报错, 改成了函数形式就可以了
+
+![](../imgs/ref-error1.png)
+
+![](../imgs/ref-error.png)
+
+
+
+https://juejin.im/post/5b59287af265da0f601317e3
+https://stackoverflow.com/questions/37468913/why-ref-string-is-legacy
+https://stackoverflow.com/questions/28519287/what-does-only-a-reactowner-can-have-refs-mean
