@@ -108,3 +108,15 @@ https://segmentfault.com/a/1190000009809466
 [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
 [模块化七日谈 ](https://juejin.im/post/5aaa37c8f265da23945f365c)
 [Common JS、AMD、CMD 和 UMD 的区别 ](https://github.com/G-Grant/Note/issues/3)
+
+## mac中的文件允许输入斜线和反斜线
+
+在做文件上传是需要考虑到mac的上传，禁止用户上传带有特殊字符的文件名
+
+```js
+
+const fileMatchName = (file) => {
+  const regexp = new RegExp(/[\\\/:*?"<>|]+/)
+  return !regexp.test(file.name)
+}
+```
