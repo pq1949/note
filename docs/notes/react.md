@@ -54,3 +54,15 @@ https://mp.weixin.qq.com/s/Tp05MoV1bQi7rgpYnz1Xhg
 https://juejin.im/post/5b59287af265da0f601317e3
 https://stackoverflow.com/questions/37468913/why-ref-string-is-legacy
 https://stackoverflow.com/questions/28519287/what-does-only-a-reactowner-can-have-refs-mean
+
+
+
+### ant-design 动态更改From.Item校验规则
+
+
+Validate 后 Form 会缓存结果，如果你直接动态改 rule 的话，加一个 force 来强制无视缓存就好了
+
+https://codesandbox.io/s/oj9r74k329
+
+
+https://github.com/ant-design/ant-design/issues/13689
