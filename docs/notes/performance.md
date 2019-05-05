@@ -10,3 +10,7 @@
 ## 页面渲染
 
  * [浅析前端页面渲染机制](http://blog.codingplayboy.com/2017/03/29/webpage_render/)
+
+## 性能优化
+
+* [【译】唯快不破：Web 应用的 13 个优化步骤](https://zhuanlan.zhihu.com/p/21417465)
