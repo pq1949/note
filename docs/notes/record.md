@@ -307,3 +307,17 @@ https://learngitbranching.js.org/
 ### 不错的教程
 
 https://nodeschool.io/zh-cn/
+
+
+### git bash 新增命令别名
+
+打开`gitbash` 直接`cd`进入个人根目录
+```bash
+cd
+notepad .bashrc
+```
+输入下面内容到 `.bashrc` 文件
+notepad++的安装目录中如果有特殊字符，可以用 `\` 进行转义
+```
+alias o="/d/Program\" \"Files\" \"\(x86\)/Notepad++/notepad++.exe"
+```
