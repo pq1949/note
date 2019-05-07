@@ -66,3 +66,16 @@ https://codesandbox.io/s/oj9r74k329
 
 
 https://github.com/ant-design/ant-design/issues/13689
+
+
+### onClick onChange onKeyUp onKeyDown 事件
+
+`onKeyDown` 获取的 `e.target.value` 总是上一次输入的结果
+
+只有`onKeyDown` `onKeyUp`能获取到 `e.keyCode`
+
+`onChange` 和 `onKeyUp` 都获取到实时输入的 e.target.value`
+
+所以想同时处理 `e.target.value` 和  `e.keyCode` 应该使用 `onKeyUp`
+
+https://codesandbox.io/embed/1j7vj4k27
