@@ -321,3 +321,20 @@ notepad++的安装目录中如果有特殊字符，可以用 `\` 进行转义
 ```
 alias o="/d/Program\" \"Files\" \"\(x86\)/Notepad++/notepad++.exe"
 ```
+
+
+### windows Terminal 安装
+
+1. `git clone git@github.com:microsoft/Terminal.git`
+2. `git submodule update --init --recursive`
+3. `.\nuget restore OpenConsole.sln` ( `nuget` 可以在`\dep\nuget`中找到)
+4. 安装 `visual studio 2017`  https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes 2019也安装过，错误比较多就换了
+5. 用`visual studio 2017` 打开 `OpenConsole.sln` 生产解决方案，不出意外，会有些错误，按照提示去网上搜解决办法，
+    其中一个改了比较久的是pch内存不够，这个需要改一下windows的默认的虚拟内存，同时 visual studio 中对应设置成\zm200 获取其他可以
+6. 需要设置成 release 和 x64 进行构建
+7. 最后好不容易编译好了，又会提示windows版本不够要升级，那就升级一下吧，注册账号，更新到windows预览版
+   ![](../imgs/Snipaste_2019-05-08_15-10-52.png)
+8. 然后在部署就可以成功了
+   ![](../imgs/Snipaste_2019-05-08_16-25-37.png)
+
+https://github.com/microsoft/Terminal/issues/489#issue-441161390
