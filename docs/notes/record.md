@@ -337,4 +337,23 @@ alias o="/d/Program\" \"Files\" \"\(x86\)/Notepad++/notepad++.exe"
 8. 然后在部署就可以成功了
    ![](../imgs/Snipaste_2019-05-08_16-25-37.png)
 
+装完后可以在win10商店中安装一下wsl玩玩
+
+ubuntu或者debian，安装之前需要 进入应用，选择程序和功能，点击启用或关闭Windows功能，勾选适用于Linux的Windows子系统
+![](../imgs/Snipaste_2019-05-08_16-34-55.png)
+
+`ubuntu`和`debian`的目录在`windows`中是在这个问题
+
+```
+C:\Users\Administrator\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs
+
+C:\Users\Administrator\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76v4gfsz19hv4\LocalState\rootfs\home\leo
+```
+
+有意思的是在windows中直接复制或者新建文件在wsl中是看不到这个文件的，但是wsl新建同名文件保存又会提示失败。
+
+通过在wsl的shell中 输入 `explore.exe .` 打开对应的网络位置后，可以进行两个系统的文件共享
+
+`\\wsl$` 这个就是安装的系统共享的目录
+
 https://github.com/microsoft/Terminal/issues/489#issue-441161390
