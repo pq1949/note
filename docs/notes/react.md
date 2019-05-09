@@ -79,3 +79,45 @@ https://github.com/ant-design/ant-design/issues/13689
 所以想同时处理 `e.target.value` 和  `e.keyCode` 应该使用 `onKeyUp`
 
 https://codesandbox.io/embed/1j7vj4k27
+
+
+### React中Redux与通过 connect后获取 ref
+
+1. 可以在`connect`组件加上 `withRef` 参数
+```js
+@connect(state => ({
+  language: state.language,
+  smsStatistics: state.billing.smsStatistics,
+  mobileStatistics: state.billing.mobileStatistics
+}), actionCreators, null, { withRef: true })
+```
+
+文档看这里
+https://react-redux.js.org/5.x/api/connect-advanced#arguments
+![](../imgs/Snipaste_2019-05-09_22-29-07.png)
+
+获取的时候可以这样
+```js
+this.halfYear.getWrappedInstance()
+```
+
+https://segmentfault.com/a/1190000015172005
+
+
+2. 可以在包装组件的 `componentDidMount` 方法中调用父组件的方法，把自己的引用主动上报到父组件
+
+connect的组件中componentDidMount方法中
+```js
+componentDidMount () {
+  this.props.saveRef(this)
+}
+```
+父组件中定义好 `saveRef` 接收子组件的引用
+
+```js
+saveRef(node) {
+  this.childNode = node
+}
+```
+
+类似的 `rc-form` 中也可以通过类似的方法获取，不过`rc-form`中也有类似1的方式，建议使用官方提供的方法
