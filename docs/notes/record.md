@@ -359,7 +359,7 @@ C:\Users\Administrator\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76
 https://github.com/microsoft/Terminal/issues/489#issue-441161390
 
 
-### windos 批量重命名
+### windows 批量重命名
 
 `ren *.txt *.sql`
 https://blog.csdn.net/zhouzihan520xj/article/details/40301087
