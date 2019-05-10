@@ -121,3 +121,18 @@ saveRef(node) {
 ```
 
 类似的 `rc-form` 中也可以通过类似的方法获取，不过`rc-form`中也有类似1的方式，建议使用官方提供的方法
+
+
+### React 中有时候 componentWillReceiveProps 中的 nextProps 和 this.props 始终相等
+
+出现这种情况一般是由于传给组件的props一致是同一个对象，使用的是相同的对象的引用地址，导致无法区分前后的props
+
+修改方法就是传给组件的props组件记得要拷贝出一份新的出来即可，
+
+在使用 ant的tabel组件的时候遇到了这个问题，渲染列表数据时想通过 props 来改变组件内部的值，但是 `componentWillReceiveProps`中的前后  `props`值都一样，无法区分
+
+可以看这里，体验一下，https://codesandbox.io/embed/0prjz46r3v
+
+当然一般子组件的props都是绑定在state上，通过`setstate`改变state时，会重新拿到一个新对象，所以不会有问题，出问题的是传给子组件的props是外面传进来的，redux的connect的store中的属性，没处理好的话前后的props是同一个对象的引用，这种错误一般比较难排查，这大概就是 `immutable` 受欢迎的原因吧
+
+https://github.com/camsong/blog/issues/3
