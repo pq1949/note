@@ -18,3 +18,8 @@ chore: (updating grunt tasks etc; no production code change)
 ```
 
 https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716s
+
+
+https://github.com/conventional-changelog/conventional-changelog/blob/9c359faacea93b566f19c4c7214a6bca58edf99f/conventions/angular.md
+
+https://www.conventionalcommits.org/zh/v1.0.0-beta.2/
