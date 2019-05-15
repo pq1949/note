@@ -165,13 +165,12 @@ import fails with 'no default export'  https://github.com/Microsoft/TypeScript-R
 ```json
 {
   "compilerOptions": {
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "module": "commonjs",
-      "target": "es6",
-      "jsx": "react"
+    "moduleResolution": "node",
+    "module": "esnext",
+    "jsx": "react"
   }
 }
+
 
 ```
 
@@ -186,7 +185,7 @@ import fails with 'no default export'  https://github.com/Microsoft/TypeScript-R
     "gen-doc-mirror": "node ./doc-mirror",
     "deploy": "npm run gen-doc-mirror",
     "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -198,12 +197,14 @@ import fails with 'no default export'  https://github.com/Microsoft/TypeScript-R
   "license": "ISC",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "babel-plugin-import": "^1.11.0",
     "clean-webpack-plugin": "^2.0.2",
     "css-loader": "^2.1.1",
     "glob": "^7.1.4",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^2.7.2",
+    "less-loader": "^5.0.0",
     "style-loader": "^0.23.1",
+    "ts-import-plugin": "^1.5.5",
     "typescript": "^3.4.5",
     "upath": "^1.1.2",
     "webpack": "^4.31.0",
@@ -221,6 +222,7 @@ import fails with 'no default export'  https://github.com/Microsoft/TypeScript-R
 }
 
 
+
 ```
 
 `webpack.config.js`
@@ -229,6 +231,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const webpack = require('webpack')
+const tsImportPluginFactory = require('ts-import-plugin')
 
 module.exports = {
   entry: {
@@ -252,12 +255,24 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
+        options: {
+          getCustomTransformers: () => ({
+            before: [tsImportPluginFactory({
+              libraryName: 'antd',
+              libraryDirectory: 'lib',
+              style: true
+            })]
+          })
+        },
         include: /src/
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        include: /src/
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },
@@ -271,4 +286,9 @@ module.exports = {
   ]
 };
 
+
 ```
+https://github.com/sometimes2019/sometimes2019.github.io
+
+### 深入理解 TypeScript
+https://jkchao.github.io/typescript-book-chinese/
