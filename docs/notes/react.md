@@ -140,3 +140,135 @@ https://github.com/camsong/blog/issues/3
 
 ### Building a Complex UI Animation in React, Simply
 https://css-tricks.com/building-a-complex-ui-animation-in-react-simply/#more-272368
+
+
+### good lessons
+[Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019) ](https://www.valentinog.com/blog/babel/)
+[Webpack 4 Tutorial: from 0 Conf to Production Mode](https://www.valentinog.com/blog/webpack/)
+[Container Components](https://medium.com/@learnreact/container-components-c0e67432e005)
+[Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+[基于Webpack搭建React开发环境](https://juejin.im/post/5afc29fa6fb9a07ab379a2ae)
+
+[Webpack 4 + React with Typescript](https://medium.com/@atingenkay/webpack-4-react-with-typescript-996eb78ff348)
+https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+
+
+### webpack, typescript, react
+
+https://medium.com/@atingenkay/webpack-4-react-with-typescript-996eb78ff348
+https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+https://www.tslang.cn/docs/handbook/compiler-options.html
+http://json.schemastore.org/tsconfig
+import fails with 'no default export'  https://github.com/Microsoft/TypeScript-React-Starter/issues/8
+
+`tsconfig.json`
+```json
+{
+  "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "target": "es6",
+      "jsx": "react"
+  }
+}
+
+```
+
+`package.json`
+```json
+{
+  "name": "sometimes2019.github.io",
+  "version": "1.0.0",
+  "description": "share",
+  "main": "index.js",
+  "scripts": {
+    "gen-doc-mirror": "node ./doc-mirror",
+    "deploy": "npm run gen-doc-mirror",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sometimes:sometimes2019/sometimes2019.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-import": "^1.11.0",
+    "clean-webpack-plugin": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "glob": "^7.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.4.5",
+    "upath": "^1.1.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "antd": "^3.18.1",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
+
+
+```
+
+`webpack.config.js`
+```js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const webpack = require('webpack')
+
+module.exports = {
+  entry: {
+    app: './src/index.tsx'
+  },
+  mode: 'development',
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  devtool: 'cheap-module-source-map',
+  devServer: {
+    contentBase: './',
+    hot: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
+        include: /src/
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        include: /src/
+      }
+    ]
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'my tool',
+      template: 'index.html'
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
+};
+
+```
