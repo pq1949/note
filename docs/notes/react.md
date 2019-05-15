@@ -136,3 +136,7 @@ saveRef(node) {
 当然一般子组件的props都是绑定在state上，通过`setstate`改变state时，会重新拿到一个新对象，所以不会有问题，出问题的是传给子组件的props是外面传进来的，redux的connect的store中的属性，没处理好的话前后的props是同一个对象的引用，这种错误一般比较难排查，这大概就是 `immutable` 受欢迎的原因吧
 
 https://github.com/camsong/blog/issues/3
+
+
+### Building a Complex UI Animation in React, Simply
+https://css-tricks.com/building-a-complex-ui-animation-in-react-simply/#more-272368

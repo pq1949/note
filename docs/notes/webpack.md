@@ -15,3 +15,8 @@ http://webpack.jakoblind.no
 ### Time-saving synchronised browser testing.
 https://browsersync.io/
 http://www.browsersync.cn/
+
+
+### webpack sourcemap
+https://blog.csdn.net/liwusen/article/details/79414508
+https://segmentfault.com/a/1190000016404266
