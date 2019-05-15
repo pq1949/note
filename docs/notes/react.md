@@ -161,15 +161,20 @@ https://www.tslang.cn/docs/handbook/compiler-options.html
 http://json.schemastore.org/tsconfig
 import fails with 'no default export'  https://github.com/Microsoft/TypeScript-React-Starter/issues/8
 
+翻译 | 开始使用 TypeScript 和 React https://juejin.im/post/595cc34ff265da6c3d6c262b
+
 `tsconfig.json`
 ```json
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "module": "esnext",
     "jsx": "react"
   }
 }
+
 
 
 ```
