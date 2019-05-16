@@ -4,6 +4,7 @@
 * [designPatterns](/notes/designPatterns)
 * [dom](/notes/dom)
 * [javascript](/notes/javascript)
+* [typescript](/notes/typescript)
 * [network](/notes/network)
 * [performance](/notes/performance)
 * [react](/notes/react)
