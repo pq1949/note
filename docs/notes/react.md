@@ -140,3 +140,13 @@ https://github.com/camsong/blog/issues/3
 
 ### Building a Complex UI Animation in React, Simply
 https://css-tricks.com/building-a-complex-ui-animation-in-react-simply/#more-272368
+
+
+### redux
+[深入浅出 - Redux](https://www.w3ctech.com/topic/1561)
+
+[看漫画，学 Redux](https://github.com/jasonslyvia/a-cartoon-intro-to-redux-cn)
+
+[如何理解 Facebook 的 flux 应用架构？](https://www.zhihu.com/question/33864532/answer/57657275)
+
+[Redux 中文文档](https://cn.redux.js.org/)
