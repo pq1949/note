@@ -14,3 +14,15 @@
 ## 性能优化
 
 * [【译】唯快不破：Web 应用的 13 个优化步骤](https://zhuanlan.zhihu.com/p/21417465)
+
+
+## repaints on scroll warning
+https://stackoverflow.com/questions/24741502/can-i-do-anything-about-repaints-on-scroll-warning-in-chrome-for-overflowscr
+
+https://dev.opera.com/articles/css-will-change-property/
+
+https://www.fourkitchens.com/blog/article/fix-scrolling-performance-css-will-change-property/
+
+https://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/
+
+[使用CSS3 will-change提高页面滚动、动画等渲染性能](https://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/)
