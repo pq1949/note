@@ -363,3 +363,11 @@ https://github.com/microsoft/Terminal/issues/489#issue-441161390
 
 `ren *.txt *.sql`
 https://blog.csdn.net/zhouzihan520xj/article/details/40301087
+
+
+### 除了追番，你还可以在 B 站爱上学习
+https://sspai.com/post/54624
+
+
+### dva与umi笔记
+https://yewills.github.io/2019/05/19/dva_umi/

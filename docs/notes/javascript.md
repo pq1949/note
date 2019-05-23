@@ -1,3 +1,5 @@
+## JSTips ⭐️⭐️⭐️
+http://www.jstips.co/
 
 ## JavaScript 指南 MDN
 
@@ -120,3 +122,43 @@ const fileMatchName = (file) => {
   return !regexp.test(file.name)
 }
 ```
+
+## 稀疏数组
+
+创建稀疏数组的方式
+
+```js
+const a = [,,,]  // [empty × 3]
+
+const b = new Array(3) //[empty × 3]
+
+const bb = new Array()
+bb.length = 3 // [empty × 3]
+
+const c = []
+c[100] = 100 // [empty × 100, 100]
+
+const c = []
+c.length = 10 // [empty × 10]
+
+const d = [0,1,2]
+delete d[1] // [0, empty, 2]
+```
+通过 `for in` `map` `forEach` 等方式遍历稀疏数组不能按照数组的长度遍历完整的数组，会直接跳过那些是 `empty` 的位置
+
+
+创建密集数组
+
+```js
+const a = Array.apply(null, Array(3)) // [undefined, undefined, undefined]
+arr.map((elem, index) => index) // [0, 1, 2, 3]
+```
+http://www.jstips.co/en/javascript/3-array-hacks/
+
+
+### 常用 module
+- `xss`
+- `lodash`
+- `moment`
+- `dayjs`
+-
