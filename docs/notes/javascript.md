@@ -156,6 +156,14 @@ arr.map((elem, index) => index) // [0, 1, 2, 3]
 http://www.jstips.co/en/javascript/3-array-hacks/
 
 
+### Object.is
+```js
+NaN === NaN is false, but Object.is(NaN, NaN) is true
++0 === -0 is true, but Object.is(+0, -0) is false
+-0 === +0 is true, but Object.is(-0, +0) is false
+```
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+
 ### 常用 module
 - `xss`
 - `lodash`
