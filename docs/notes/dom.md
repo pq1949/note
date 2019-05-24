@@ -28,5 +28,5 @@ https://segmentfault.com/q/1010000003904393/a-1020000003904469
 
 
 
-#### IE的伪元素设置 `display table` 无效
+### IE的伪元素设置 `display table` 无效
 https://stackoverflow.com/questions/29379602/in-ie11-using-pseudo-element-before-and-displaytable-cell-and-glyphicons-cont
