@@ -1,3 +1,8 @@
+
+---
+[TOC]
+---
+
 ### typescript 学习资料
 https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
 https://basarat.gitbooks.io/typescript/content/docs/getting-started.html
@@ -169,3 +174,11 @@ https://github.com/sometimes2019/sometimes2019.github.io
 
 ### 深入理解 TypeScript
 https://jkchao.github.io/typescript-book-chinese/
+
+
+### typescript 排错
+
+- `vscode`中代码提示“重复函数实现”警告 Duplicate function implementation
+  试试 `tsc --init`
+  https://stackoverrun.com/cn/q/12144042
+  https://github.com/Microsoft/TypeScript/issues/10804
