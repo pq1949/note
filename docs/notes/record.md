@@ -383,3 +383,11 @@ http://latentflip.com/loupe/
 ### 评论
 - [Valine ](https://valine.js.org/)
 - [GITALK](https://gitalk.github.io/)
+
+
+### Canvas + WebSocket + Redis 实现一个视频弹幕
+https://segmentfault.com/a/1190000016654011
+
+
+### 简述 OAuth 2.0 的运作流程
+https://www.barretlee.com/blog/2016/01/10/oauth2-introduce/

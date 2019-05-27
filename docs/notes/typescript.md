@@ -14,6 +14,8 @@ https://twitter.com/mjackson/status/1128500194000220166
 awesome-typescript
 https://github.com/semlinker/awesome-typescript
 
+[TypeScript - 一种思维方式](https://juejin.im/post/5cd6387d518825682348442d)
+
 ### good lessons
 [Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019) ](https://www.valentinog.com/blog/babel/)
 [Webpack 4 Tutorial: from 0 Conf to Production Mode](https://www.valentinog.com/blog/webpack/)

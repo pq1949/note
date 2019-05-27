@@ -165,3 +165,7 @@ https://css-tricks.com/building-a-complex-ui-animation-in-react-simply/#more-272
 
 
 https://codesandbox.io/embed/0prjz46r3v
+
+
+### React性能优化总结
+https://segmentfault.com/a/1190000007811296

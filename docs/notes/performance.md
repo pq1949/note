@@ -26,3 +26,7 @@ https://www.fourkitchens.com/blog/article/fix-scrolling-performance-css-will-cha
 https://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/
 
 [使用CSS3 will-change提高页面滚动、动画等渲染性能](https://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/)
+
+
+### 浏览器的工作原理：新式网络浏览器幕后揭秘
+https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
