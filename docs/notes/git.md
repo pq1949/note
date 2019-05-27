@@ -25,8 +25,25 @@ https://github.com/conventional-changelog/conventional-changelog/blob/9c359faace
 https://www.conventionalcommits.org/zh/v1.0.0-beta.2/
 
 
-###  查看git的配置文件的位置
+### git配置
 
+- 查看`git`的配置文件的位置
 ```bash
  git config --list --show-origin
+```
+- 打开配置文件
+```bash
+git config -e [--local] [--global] (默认是`global`)
+git config --global user.name "xxx"  也可以直接设置，不用打开编辑器
+```
+
+### 提交
+```bash
+git add . （做了修改（包括文件的添加、删除和修改））
+git commit -m "message"
+
+git commit -am “message” (只做了修改，没有删除和）
+
+git commit --amend  修改上次的提交
+
 ```
