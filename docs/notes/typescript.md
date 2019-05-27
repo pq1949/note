@@ -1,8 +1,3 @@
-
----
-[TOC]
----
-
 ### typescript 学习资料
 https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
 https://basarat.gitbooks.io/typescript/content/docs/getting-started.html
