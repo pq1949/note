@@ -176,3 +176,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ### 如何衡量一个人的 JavaScript 水平？
 https://www.zhihu.com/question/22855484/answer/657320514
+
+### 输入框
+
+
+1. `input.selectionStart` `input.selectionEnd` 可以用来设置input中被选中的文字
+2.  `autoComplete` 关闭自动提示
