@@ -1,3 +1,13 @@
+### 常用 module 包
+- `xss`
+- `lodash`
+- `moment`
+- `dayjs`
+- `push.js`
+- `linkifyjs`
+- `b64-to-blob`
+- `script.js`
+
 ## JSTips ⭐️⭐️⭐️
 http://www.jstips.co/
 
@@ -164,15 +174,6 @@ NaN === NaN is false, but Object.is(NaN, NaN) is true
 ```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
 
-### 常用 module 包
-- `xss`
-- `lodash`
-- `moment`
-- `dayjs`
-- `push.js`
-- `linkifyjs`
-- `b64-to-blob`
-- `script.js`
 
 ### 如何衡量一个人的 JavaScript 水平？
 https://www.zhihu.com/question/22855484/answer/657320514
