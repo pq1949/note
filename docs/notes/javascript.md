@@ -10,6 +10,9 @@
 - `script.js`
 - `i18next`
 
+### 规范 guide
+1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
+2. [JavaScript规范](https://github.com/adamlu/javascript-style-guide)
 ## JSTips ⭐️⭐️⭐️
 
 http://www.jstips.co/

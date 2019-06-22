@@ -1,4 +1,7 @@
 
+### 掘金翻译计划
+https://github.com/xitu/gold-miner
+
 ### best-chinese-front-end-blogs ⭐️⭐️⭐️⭐️⭐️
 https://github.com/FrankFang/best-chinese-front-end-blogs
 
