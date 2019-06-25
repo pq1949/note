@@ -404,3 +404,20 @@ https://github.com/alibaba/kiwi
 
 ### 一个基于 React 的可缩放图片控件
 https://github.com/Caldis/react-zmage
+
+###  下载视频
+https://www.urlgot.com/
+
+https://www.clipconverter.cc/
+
+https://mac.eltima.com/cn/youtube-downloader-mac.html
+
+
+1. 下载视频
+https://www.urlgot.com/
+
+2. 自动识别字幕
+https://www.8bage.com/
+
+3. 字幕格式转换(ass->srt)
+http://www.nicetool.net/app/subtitle_convert.html
