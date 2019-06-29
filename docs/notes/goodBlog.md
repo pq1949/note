@@ -103,3 +103,6 @@ https://github.com/ProtoTeam/blog
 
 ### KiwenLau Fundebug 创始人
 https://kiwenlau.com/
+
+### Chrome插件开发 - github仓库star趋势图
+https://github.com/SmallStoneSK/Blog
