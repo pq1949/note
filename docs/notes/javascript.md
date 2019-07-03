@@ -9,6 +9,8 @@
 - `b64-to-blob`
 - `script.js`
 - `i18next`
+- `chimee-player`
+- `colorful`
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
@@ -67,6 +69,14 @@ JavaScript 是一种基于原型而不是基于类的面向对象语言。正是
 ## 位运算符在 JS 中的妙用
 
 - https://juejin.im/post/5a98ea2f6fb9a028bb186f34
+
+```js
+// 所有非数值转换成0
+// 所有大于等于 0 等数取整数部分
+this.length >>> 0
+// https://www.zhihu.com/question/20693429
+// https://github.com/seajs/seajs/issues/150
+```
 
 ## TypeScript
 
@@ -173,6 +183,8 @@ delete d[1]; // [0, empty, 2]
 ```js
 const a = Array.apply(null, Array(3)); // [undefined, undefined, undefined]
 arr.map((elem, index) => index); // [0, 1, 2, 3]
+
+const b = Array(3).fill() // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 ```
 
 http://www.jstips.co/en/javascript/3-array-hacks/
@@ -241,3 +253,42 @@ export const escape2Html = (str) => {
   })
 }
 ```
+
+### js 字符串自动补全
+
+[JS字符串补全方法padStart()和padEnd()简介](https://www.zhangxinxu.com/wordpress/2018/07/js-padstart-padend/)
+```js
+var timestamp = +String(timestamp).padEnd(13, '0')
+
+var month = String(new Date().getMonth() + 1).padStart(2, '0')
+```
+
+### 优雅处理错误信息
+
+```js
+try {
+    Func();
+} catch (e) {
+    location.href = "https://stackoverflow.com/search?q=[js]+" + e.message;
+}
+
+//
+const wrapWithTryCatch = fn => (...args) => {
+  try {
+    return fn.apply(null, args)
+  } catch (e) {
+    console.log(e)
+    window.open("https://stackoverflow.com/search?q=[js]+" + e.message)
+  }
+}
+```
+### 优雅处理Async/Await参数
+
+```js
+function AsyncTo(promise) {
+    return promise.then(data => [null, data]).catch(err => [err]);
+}
+const [err, res] = await AsyncTo(Func());
+
+```
+[灵活运用JavaScript开发技巧](https://juejin.im/post/5cc7afdde51d456e671c7e48#heading-8)

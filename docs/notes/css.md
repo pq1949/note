@@ -16,7 +16,7 @@
 
 https://github.com/30-seconds/30-seconds-of-css
 
-### QiShaoXuan css_tricks ⭐️⭐️⭐️⭐️
+### QiShaoXuan css_tricks css tricks⭐️⭐️⭐️⭐️
 
 https://qishaoxuan.github.io/css_tricks/
 
