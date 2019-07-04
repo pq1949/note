@@ -10,7 +10,8 @@
 - `script.js`
 - `i18next`
 - `chimee-player`
-- `colorful`
+- `chalk`
+- `ora`
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
@@ -292,3 +293,16 @@ const [err, res] = await AsyncTo(Func());
 
 ```
 [灵活运用JavaScript开发技巧](https://juejin.im/post/5cc7afdde51d456e671c7e48#heading-8)
+
+
+###  支持中文和url-safe编码的Base64
+```js
+function urlSafeBase64(base64) {
+  return base64
+    .replace(/=/g, "")
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_");
+}
+```
+或者使用这个库
+https://github.com/brianloveswords/base64url
