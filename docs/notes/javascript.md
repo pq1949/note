@@ -12,6 +12,7 @@
 - `chimee-player`
 - `chalk`
 - `ora`
+- `rimraf`
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
