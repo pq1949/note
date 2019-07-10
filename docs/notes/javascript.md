@@ -307,3 +307,30 @@ function urlSafeBase64(base64) {
 ```
 或者使用这个库
 https://github.com/brianloveswords/base64url
+
+
+### Why is my webpack build slow?
+https://samsaccone.com/posts/why-is-my-webpack-build-slow.html
+
+
+### 节流 防抖
+`core-decorators/lib/throttle`
+```js
+throttle(fn, wait, {
+  leading,
+  trailing
+})
+// leading 默认为 true , 设置成 false 时 第一次不执行
+// trailing 默认为 true , 奢侈成 false 时 最后一次不执行
+
+// 两个都设置成 false 时 都不执行
+```
+
+`core-decorators/lib/debounce`
+
+```js
+debounce(fn, wait,immediate)
+
+// immediate 默认为 false ，只有当间隔大于 wait 时才开始执行
+// immediate 设置成 true 时 会先立即执行一次
+```

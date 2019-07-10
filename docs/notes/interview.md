@@ -47,3 +47,7 @@ https://segmentfault.com/a/1190000016885832
 Cherry-Pick https://juejin.im/post/5925a2d9a22b9d0058b0fd9b
 
 git rebase https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%81%E5%90%88%E5%B9%B6%EF%BC%9AMerge%E3%80%81Rebase-%E7%9A%84%E9%80%89%E6%8B%A9
+
+### 前端 100 问：能搞懂 80% 的请把简历给我
+
+https://juejin.im/post/5d23e750f265da1b855c7bbe?utm_source=gold_browser_extension
