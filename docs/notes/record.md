@@ -421,3 +421,40 @@ https://www.8bage.com/
 
 3. 字幕格式转换(ass->srt)
 http://www.nicetool.net/app/subtitle_convert.html
+
+
+### centOS 安装 Gitlab Runner
+
+https://mirror.tuna.tsinghua.edu.cn/help/gitlab-runner/
+
+1. 新建 `/etc/yum.repos.d/gitlab-runner.repo`
+
+```
+[gitlab-runner]
+name=gitlab-runner
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/gitlab-runner/yum/el7
+repo_gpgcheck=0
+gpgcheck=0
+enabled=1
+gpgkey=https://packages.gitlab.com/gpg.key
+```
+2. 执行
+```
+sudo yum makecache
+sudo yum install gitlab-runner
+```
+3. 启动
+```
+sudo gitlab-runner start
+```
+
+### 徽章地址 Badges
+
+https://shields.io/
+https://badgen.net/
+https://forthebadge.com/
+https://badge.fury.io/
+https://github.com/boennemann/badges
+
+### 使用Astah Community建UML类图之总结
+https://www.cnblogs.com/wuhuisheng/archive/2012/09/12/2682263.html
