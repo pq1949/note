@@ -181,3 +181,25 @@ https://jkchao.github.io/typescript-book-chinese/
   试试 `tsc --init`
   https://stackoverrun.com/cn/q/12144042
   https://github.com/Microsoft/TypeScript/issues/10804
+
+
+### 引入第三方模块 没有type定义 d.ts 时的兼容办法
+
+项目中创建一个`types`目录，新建一个 `index.d.ts` 文件
+```ts
+
+declare module 'my-ftp-deploy' {
+  const FtpDeployer: any;
+  export = FtpDeployer;
+}
+
+```
+然后 `tsconfig.json` 中指定下这个模块定义的路径
+```json
+{
+  "baseUrl": "./",
+    "paths": {
+      "my-ftp-deploy": ["src/@types/my-ftp-deploy"]
+    },
+}
+```
