@@ -334,3 +334,40 @@ debounce(fn, wait,immediate)
 // immediate 默认为 false ，只有当间隔大于 wait 时才开始执行
 // immediate 设置成 true 时 会先立即执行一次
 ```
+
+### canvas 转 blob
+```js
+import b64toBlob from 'b64-to-blob'
+export function upgradeFileName (oldName, suffix = '.jpg') {
+  if (oldName) {
+    return oldName.replace(/\.\w+$/, suffix)
+  } else {
+    return Date.now() + suffix
+  }
+}
+/**
+ * canvas to blob
+ * @param {*} canvas - the canvas
+ * @param {*} callback - callback when blob is generated
+ * @param {*} oldName - old file name
+ * @param {*} mime - blob file type
+ */
+export function canvasToBlob (canvas, callback, oldName, mime) {
+  if (canvas.msToBlob) {
+    const blob = canvas.msToBlob()               // IE下同步是调用
+    blob.name = upgradeFileName(oldName, '.png') // IE下默认是png
+    console.log(111, blob.name)
+    callback(blob)
+  } else if (canvas.toBlob) {
+    canvas.toBlob(blob => {
+      blob.name = upgradeFileName(oldName, '.jpg')
+      callback(blob)
+    }, mime)
+  } else {
+    const dataUrl = canvas.toDataURL(mime, 1.0).split(',')[1]
+    const blob = b64toBlob(dataUrl, mime)
+    blob.name = upgradeFileName(oldName, '.jpg')
+    callback(blob)
+  }
+}
+```
