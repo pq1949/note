@@ -371,3 +371,8 @@ export function canvasToBlob (canvas, callback, oldName, mime) {
   }
 }
 ```
+
+### Content Security Policy   CSP
+
+[Content-Security-Policy的实战应用](https://www.jianshu.com/p/a8b769e7d4bd)
+[Content Security Policy 入门教程](http://www.ruanyifeng.com/blog/2016/09/csp.html)
