@@ -470,3 +470,7 @@ https://github.com/aisuhua/restful-api-design-references
 1. [Chrome 插件开发官方文档 What are extensions?](https://developer.chrome.com/extensions)
 2. [Chrome扩展及应用开发（首发版）](http://www.ituring.com.cn/book/miniarticle/110853)
 3. [360极速浏览器翻译的官方文档](http://open.chrome.360.cn/extension_dev/overview.html)
+
+### 静态页面
+
+1. http://8.101.com/  动画流畅

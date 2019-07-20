@@ -379,3 +379,10 @@ export function canvasToBlob (canvas, callback, oldName, mime) {
 
 [Content-Security-Policy的实战应用](https://www.jianshu.com/p/a8b769e7d4bd)
 [Content Security Policy 入门教程](http://www.ruanyifeng.com/blog/2016/09/csp.html)
+
+
+### Web Worker
+[怎么在 ES6+Webpack 下使用 Web Worker](https://juejin.im/post/5acf348151882579ef4f5a77)
+[Web Workers w3c](https://w3c.github.io/workers/)
+[Web Worker 网道](https://wangdoc.com/javascript/bom/webworker.html)
+[Canvas 最佳实践（性能篇）](http://taobaofed.org/blog/2016/02/22/canvas-performance/)
