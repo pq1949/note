@@ -13,11 +13,14 @@
 - `chalk`
 - `ora`
 - `rimraf`
+- `feather-icons`  simply beautiful open source icons
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
 2. [JavaScript规范](https://github.com/adamlu/javascript-style-guide)
 3. [如何写出漂亮的 JavaScript 代码](https://juejin.im/post/5d0e11196fb9a07eee5ed6d2?utm_source=gold_browser_extension)
+4. [O2前端规范文档](https://github.com/o2team/guide)
+5. [JavaScript规范](https://github.com/adamlu/javascript-style-guide)
 ## JSTips ⭐️⭐️⭐️
 
 http://www.jstips.co/

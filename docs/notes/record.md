@@ -458,3 +458,15 @@ https://github.com/boennemann/badges
 
 ### 使用Astah Community建UML类图之总结
 https://www.cnblogs.com/wuhuisheng/archive/2012/09/12/2682263.html
+### restful-api-design-references
+https://github.com/aisuhua/restful-api-design-references
+
+### 正则表达式
+1. [learn-regex](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md)
+
+
+### chrome 插件开发
+
+1. [Chrome 插件开发官方文档 What are extensions?](https://developer.chrome.com/extensions)
+2. [Chrome扩展及应用开发（首发版）](http://www.ituring.com.cn/book/miniarticle/110853)
+3. [360极速浏览器翻译的官方文档](http://open.chrome.360.cn/extension_dev/overview.html)
