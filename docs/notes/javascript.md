@@ -386,3 +386,5 @@ export function canvasToBlob (canvas, callback, oldName, mime) {
 [Web Workers w3c](https://w3c.github.io/workers/)
 [Web Worker 网道](https://wangdoc.com/javascript/bom/webworker.html)
 [Canvas 最佳实践（性能篇）](http://taobaofed.org/blog/2016/02/22/canvas-performance/)
+[Web Workers 的基本信息](https://www.html5rocks.com/zh/tutorials/workers/basics/)
+[TAT.ronnie【转向Javascript系列】深入理解Web Worker](http://www.alloyteam.com/2015/11/deep-in-web-worker/)
