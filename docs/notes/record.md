@@ -474,3 +474,8 @@ https://github.com/aisuhua/restful-api-design-references
 ### 静态页面
 
 1. http://8.101.com/  动画流畅
+
+
+### 在线 ppt
+1. https://slides.com/
+2. https://ppt.baomitu.com/
