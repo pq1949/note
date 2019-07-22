@@ -30,3 +30,7 @@ https://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/
 
 ### 浏览器的工作原理：新式网络浏览器幕后揭秘
 https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
+
+
+### 实战篇 - 如何实现和淘宝移动端一样的模块化加载 （task-silce）
+https://juejin.im/post/5d33fd0f5188256e820c80d4?utm_source=gold_browser_extension
