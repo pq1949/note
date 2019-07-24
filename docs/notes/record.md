@@ -90,6 +90,10 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
   * https://www.intercom.com/
   * https://small.chat/
 
+### 国内客服
+
+1. 美洽
+2. 网易七鱼 https://qiyukf.com/
 
 ### Code Review 工具
 

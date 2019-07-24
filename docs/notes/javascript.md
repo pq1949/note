@@ -14,6 +14,7 @@
 - `ora`
 - `rimraf`
 - `feather-icons`  simply beautiful open source icons
+- `slash`
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
