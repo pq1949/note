@@ -22,6 +22,7 @@
 3. [如何写出漂亮的 JavaScript 代码](https://juejin.im/post/5d0e11196fb9a07eee5ed6d2?utm_source=gold_browser_extension)
 4. [O2前端规范文档](https://github.com/o2team/guide)
 5. [JavaScript规范](https://github.com/adamlu/javascript-style-guide)
+6. [airbnb/javascript](https://github.com/airbnb/javascript?utm_source=gold_browser_extension)
 ## JSTips ⭐️⭐️⭐️
 
 http://www.jstips.co/
