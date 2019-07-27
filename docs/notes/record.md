@@ -483,3 +483,48 @@ https://github.com/aisuhua/restful-api-design-references
 ### 在线 ppt
 1. https://slides.com/
 2. https://ppt.baomitu.com/
+
+
+### Homebrew 镜像使用帮助
+1. 替换现有上游
+```bash
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+//git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git/
+
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+//git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git/
+
+brew update
+```
+2. 复原
+```bash
+git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
+
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core
+
+brew update
+```
+
+### iterm2 自动登录
+
+![](../imgs/iterm2-profiles.png)
+```bash
+set user xxx
+set host xxx
+set password xxxxx
+
+set timeout 30
+spawn ssh $user@$host
+expect {
+        "(yes/no)?"
+        {send "yes\r";exp_continue}
+        "password:"
+        {send "$password\r"}
+}
+interact
+```
+https://blog.csdn.net/shaobo8910/article/details/75514849
+https://codingstyle.cn/topics/31
+
+### Mac优化之Finder自定义全局快捷键
+https://juejin.im/post/5b9486fcf265da0acc7943d3
