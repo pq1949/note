@@ -528,3 +528,74 @@ https://codingstyle.cn/topics/31
 
 ### Mac优化之Finder自定义全局快捷键
 https://juejin.im/post/5b9486fcf265da0acc7943d3
+
+### install  zsh
+
+1. check
+```bash
+cat /etc/shells
+// or
+chsh -l
+```
+2. install zsh
+```bash
+yum install zsh -y
+chsh -s /bin/zsh
+```
+
+3. install oh-my-zsh
+https://github.com/robbyrussell/oh-my-zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+//or
+sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+//or
+curl -Lo install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+sh install.sh
+```
+1. Themes
+
+查看已安装主题 `ls ~/.oh-my-zsh/themes`
+
+**主题**
+主题预览： https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+修改主题， 直接修改 `.zshrc` 中 `ZSH_THEME="agnoster"` 为对应名称即可
+
+**插件**
+- 自动补全: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+`
+
+修改 `.zshrc` 中 `plugins=(git zsh-autosuggestions)`
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+- 高亮
+ `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
+ 修改 `.zshrc` 中 `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
+https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
+#### 代理
+```bash
+# proxy list
+alias proxy='export all_proxy=socks5://127.0.0.1:1086'
+alias unproxy='unset all_proxy'
+proxy
+```
+
+### 提示精简
+`.zshrc`  中加入 `DEFAULT_USER="leo"`
+
+`vi ~/.oh-my-zsh/themes/agnoster.zsh-theme`
+显示判断在这里
+```
+# Context: user@hostname (who am I and where am I)
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
+  fi
+}
+```
+
+#### 参考
+https://github.com/robbyrussell/oh-my-zsh
