@@ -483,3 +483,7 @@ https://github.com/aisuhua/restful-api-design-references
 ### 在线 ppt
 1. https://slides.com/
 2. https://ppt.baomitu.com/
+
+### UI
+
+[创建华丽 UI 的 7条规则](https://juejin.im/post/5ce6407cf265da1bb13f0a2a)

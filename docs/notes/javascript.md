@@ -390,3 +390,8 @@ export function canvasToBlob (canvas, callback, oldName, mime) {
 [Canvas 最佳实践（性能篇）](http://taobaofed.org/blog/2016/02/22/canvas-performance/)
 [Web Workers 的基本信息](https://www.html5rocks.com/zh/tutorials/workers/basics/)
 [TAT.ronnie【转向Javascript系列】深入理解Web Worker](http://www.alloyteam.com/2015/11/deep-in-web-worker/)
+
+
+### promise
+[任务，微任务、队列和时间表](https://juejin.im/post/5d38f08df265da1bbf696068?utm_source=gold_browser_extension)
+[Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
