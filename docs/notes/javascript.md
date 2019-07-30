@@ -15,6 +15,7 @@
 - `rimraf`
 - `feather-icons`  simply beautiful open source icons
 - `slash`
+- `Dexie` indexdb
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
