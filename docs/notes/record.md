@@ -565,6 +565,11 @@ sh install.sh
 主题预览： https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 修改主题， 直接修改 `.zshrc` 中 `ZSH_THEME="agnoster"` 为对应名称即可
 
+`agnoster` 主题乱码时,把 Powerline  字体安上 `sudo apt-get install fonts-powerline`
+
+https://github.com/powerline/fonts
+
+
 **插件**
 - 自动补全: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 `
@@ -599,6 +604,13 @@ prompt_context() {
   fi
 }
 ```
+
+#### win10
+
+[How to setup a nice looking terminal with WSL in Windows 10 Creators Update](https://medium.com/@Andreas_cmj/how-to-setup-a-nice-looking-terminal-with-wsl-in-windows-10-creators-update-2b468ed7c326)
+
+[如何给 Windows Terminal 增加一个新的终端（以 Bash 为例）](https://blog.walterlv.com/post/add-a-new-profile-for-windows-terminal.html)
+
 
 #### 参考
 https://github.com/robbyrussell/oh-my-zsh
