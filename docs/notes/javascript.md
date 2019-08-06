@@ -396,3 +396,15 @@ export function canvasToBlob (canvas, callback, oldName, mime) {
 ### promise
 [任务，微任务、队列和时间表](https://juejin.im/post/5d38f08df265da1bbf696068?utm_source=gold_browser_extension)
 [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+
+### es6-features
+https://github.com/rse/es6-features
+
+
+### Object.freeze
+https://juejin.im/post/5c92ff94f265da6128275a85
+https://panjiachen.gitee.io/panjiachen.github.io/big-table/index.html#optimized
+
+
+### List of (Advanced) JavaScript Questions
+https://github.com/lydiahallie/javascript-questions
