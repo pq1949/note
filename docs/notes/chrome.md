@@ -40,3 +40,7 @@ https://developers.chrome.com/extensions/
 1. [chrome插件开发 - tab选项卡管理器](https://github.com/SmallStoneSK/Blog/issues/11)
 2. [chrome插件开发 - github仓库star趋势图](https://github.com/SmallStoneSK/Blog/issues/10)
 3. [Chrome 插件，查看开源中国软件更新资讯](https://github.com/jaywcjlove/oscnews)
+
+
+### chrome tips
+https://umaar.com/dev-tips/#archive
