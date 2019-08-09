@@ -408,3 +408,17 @@ https://panjiachen.gitee.io/panjiachen.github.io/big-table/index.html#optimized
 
 ### List of (Advanced) JavaScript Questions
 https://github.com/lydiahallie/javascript-questions
+
+### WebAssembly Wasm
+
+https://wasm.comptechs.cn/
+
+https://developer.mozilla.org/zh-CN/docs/WebAssembly
+
+https://emscripten.org/docs/getting_started/downloads.html#updating-the-emscripten-sdk
+
+### javascript-algorithms
+https://github.com/trekhleb/javascript-algorithms
+
+### awesome-javascript
+https://github.com/sorrycc/awesome-javascript
