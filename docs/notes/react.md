@@ -194,3 +194,7 @@ Invariant Violation: Objects are not valid as a React child (found: object with 
     )
   }
 ```
+打包后的代码可能会报下面的错
+```
+Unhandled promise rejection Error: Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.
+```
