@@ -625,3 +625,24 @@ https://juejin.im/post/5c28bbdff265da616501a8b3
 
 ### markdown-here
 https://github.com/adam-p/markdown-here?utm_source=gold_browser_extension
+
+
+### 私有npm源instlal方式
+
+公司搭建的私有`npm`镜像可能会存在一些包的同步问题，虽然能够通过 `npm show` 看到某个版本的包，但是就是`install`失败，去私有仓库上去掉同步按钮依然没有作用
+
+可以在`package.json`文件同层目录下，新增一个 `.npmrc` 文件，内容如下
+
+```rc
+registry=https://registry.npm.taobao.org
+@sdp.nd:registry=http://registry.npm.sdp.nd/
+```
+让公司的私有包都走公司的镜像，其他的包都走`taobao`的镜像即可
+
+其他一些可能会用到的文件的地址
+
+```
+chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
+phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass
+```
