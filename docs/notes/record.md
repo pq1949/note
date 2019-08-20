@@ -660,3 +660,7 @@ chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
 phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs
 sass_binary_site=https://npm.taobao.org/mirrors/node-sass
 ```
+### 远程调试
+
+[whistle](http://wproxy.org/whistle/install.html)
+[zan-proxy](https://youzan.github.io/zan-proxy/)
