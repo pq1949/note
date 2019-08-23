@@ -47,3 +47,38 @@ git commit -am “message” (只做了修改，没有删除和添加）
 git commit --amend  修改上次的提交
 
 ```
+### 同步Github fork 出来的分支
+
+1、配置remote，指向原始仓库
+```
+git remote add upstream https://github.com/InterviewMap/InterviewMap.git
+```
+2、上游仓库获取到分支，及相关的提交信息，它们将被保存在本地的 upstream/master 分支
+```
+git fetch upstream
+# remote: Counting objects: 75, done.
+# remote: Compressing objects: 100% (53/53), done.
+# remote: Total 62 (delta 27), reused 44 (delta 9)
+# Unpacking objects: 100% (62/62), done.
+# From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
+# * [new branch] master -> upstream/master
+```
+3、切换到本地的 master 分支
+
+```
+git checkout master
+# Switched to branch 'master'
+```
+4、把 upstream/master 分支合并到本地的 master 分支，本地的 master 分支便跟上游仓库保持同步了，并且没有丢失本地的修改。
+```
+git merge upstream/master
+# Updating a422352..5fdff0f
+# Fast-forward
+# README | 9 -------
+# README.md | 7 ++++++
+# 2 files changed, 7 insertions(+), 9 deletions(-)
+# delete mode 100644 README
+# create mode 100644 README.md
+```
+5、上传到自己的远程仓库中
+`git push `
