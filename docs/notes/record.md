@@ -665,3 +665,17 @@ sass_binary_site=https://npm.taobao.org/mirrors/node-sass
 
 [whistle](http://wproxy.org/whistle/install.html)
 [zan-proxy](https://youzan.github.io/zan-proxy/)
+
+### ruby gem 镜像
+
+https://gems.ruby-china.com
+
+### 安装 cocoapods
+
+`sudo gem install cocopods` 命令有可能会报没权限的错误，把安装位置调整一下就可以了
+
+`sudo gem install cocoapods -n /usr/local/bin`
+
+https://www.jianshu.com/p/b8406ff1e2f1
+
+https://stackoverflow.com/questions/2893889/how-do-i-fix-the-you-dont-have-write-permissions-into-the-usr-bin-directory
