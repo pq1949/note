@@ -173,3 +173,28 @@ https://segmentfault.com/a/1190000007811296
 
 ### 如何解读 react 16.3 引入的新 context api？
 https://www.zhihu.com/question/267168180
+
+### react 排错记录
+```
+Invariant Violation: Objects are not valid as a React child (found: object with keys {}). If you meant to render a collection of children, use an array instead or wrap the object using createFragment(object) from the React add-ons. Check the render method of `XXX`.
+```
+遇到类似的错误，可能是 xxx 组件中或者子组件中渲染了一个空对象，类似下面的情况, `name = {}` 不注释掉就会报错
+```js
+  render () {
+    const { prefix, displayTitle } = this.props
+    let { name, title } = this.state
+    name = {}
+    return (
+      <span
+        className={`${prefix}-name-wrapper`}
+        title={displayTitle ? title : ''}
+      >
+        {name}
+      </span>
+    )
+  }
+```
+打包后的代码可能会报下面的错
+```
+Unhandled promise rejection Error: Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.
+```

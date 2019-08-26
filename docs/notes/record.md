@@ -586,9 +586,23 @@ https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 #### 代理
 ```bash
 # proxy list
-alias proxy='export all_proxy=socks5://127.0.0.1:1086'
+alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias unproxy='unset all_proxy'
 proxy
+```
+
+```bash
+alias proxy='export all_proxy=socks5://127.0.0.1:1080 \
+	export http_proxy=http://127.0.0.1:1080 \
+	export https_proxy=http://127.0.0.1:1080 \
+	export HTTP_PROXY=http://127.0.0.1:1080 \
+	export HTTPS_PROXY=http://127.0.0.1:1080'
+
+alias unproxy='unset all_proxy \
+	unset http_proxy
+	unset https_proxy
+	unset HTTP_PROXY
+	unset HTTPS_PROXY'
 ```
 
 ### 提示精简
@@ -623,3 +637,31 @@ https://github.com/pigcan/blog/issues/3
 https://juejin.im/post/5c28bbdff265da616501a8b3
 
 https://github.com/cuke-ui/cuke-ui
+
+### markdown-here
+https://github.com/adam-p/markdown-here?utm_source=gold_browser_extension
+
+
+### 私有npm源instlal方式
+
+公司搭建的私有`npm`镜像可能会存在一些包的同步问题，虽然能够通过 `npm show` 看到某个版本的包，但是就是`install`失败，去私有仓库上去掉同步按钮依然没有作用
+
+可以在`package.json`文件同层目录下，新增一个 `.npmrc` 文件，内容如下
+
+```rc
+registry=https://registry.npm.taobao.org
+@sdp.nd:registry=http://registry.npm.sdp.nd/
+```
+让公司的私有包都走公司的镜像，其他的包都走`taobao`的镜像即可
+
+其他一些可能会用到的文件的地址
+
+```
+chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
+phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass
+```
+### 远程调试
+
+[whistle](http://wproxy.org/whistle/install.html)
+[zan-proxy](https://youzan.github.io/zan-proxy/)
