@@ -679,3 +679,9 @@ https://gems.ruby-china.com
 https://www.jianshu.com/p/b8406ff1e2f1
 
 https://stackoverflow.com/questions/2893889/how-do-i-fix-the-you-dont-have-write-permissions-into-the-usr-bin-directory
+
+### charles系列破解激活办法
+Registered Name: https://zhile.io
+License Key: 48891cf209c6d32bf4
+
+https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html
