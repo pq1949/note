@@ -14,6 +14,8 @@ https://twitter.com/mjackson/status/1128500194000220166
 awesome-typescript
 https://github.com/semlinker/awesome-typescript
 
+[如何编写 Typescript 声明文件](https://blog.jiasm.org/2018/10/12/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99-Typescript-%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/)
+
 [TypeScript - 一种思维方式](https://juejin.im/post/5cd6387d518825682348442d)
 
 [react-redux-typescript-guide](https://github.com/piotrwitek/react-redux-typescript-guide)
