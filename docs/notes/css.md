@@ -102,3 +102,8 @@ https://stackoverflow.com/questions/41804100/css-transition-not-working
 
 ### 自定义 滚动条
 https://css-tricks.com/custom-scrollbars-in-webkit/
+
+
+### 使用Flexible实现手淘H5页面的终端适配
+https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html
+https://github.com/amfe/lib-flexible

@@ -422,3 +422,20 @@ https://github.com/trekhleb/javascript-algorithms
 
 ### awesome-javascript
 https://github.com/sorrycc/awesome-javascript
+
+
+### 网页适配 iPhoneX
+
+```css
+padding-bottom: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+padding-bottom: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+
+@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {
+  div {
+    margin-bottom: constant(safe-area-inset-bottom);
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+}
+```
+
+https://aotu.io/notes/2017/11/27/iphonex/index.html
