@@ -685,3 +685,9 @@ Registered Name: https://zhile.io
 License Key: 48891cf209c6d32bf4
 
 https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html
+
+### ES 语法支持列表
+https://github.com/williamkapke/node-compat-table
+
+### node  utf-8 BOM 头的问题
+`fs.writeFileSync(filePath, '\ufeff' + JSON.stringify(data, null, 2))`

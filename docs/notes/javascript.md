@@ -16,6 +16,14 @@
 - `feather-icons`  simply beautiful open source icons
 - `slash`
 - `Dexie` indexdb
+- `flat` 拍平json
+- `rimraf` rm -rf
+- `archiver` 压缩文件
+- `filesize`
+- `ms`
+- `inquirer` 交互式输入
+- `node-baidu-translate`
+- `ora` 进度条
 
 ### 规范 guide
 1. [Alloyteam代码规范](https://github.com/AlloyTeam/CodeGuide)
