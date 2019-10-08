@@ -691,3 +691,7 @@ https://github.com/williamkapke/node-compat-table
 
 ### node  utf-8 BOM 头的问题
 `fs.writeFileSync(filePath, '\ufeff' + JSON.stringify(data, null, 2))`
+
+### any-rule 常用正则大全, 支持vscode扩展插件
+vscode 插件dmeo
+https://github.com/any86/any-rule
