@@ -310,7 +310,7 @@ function getIPAdress(){
 https://learngitbranching.js.org/
 
 
-### 不错的教程
+### 不错的nodejs教程
 
 https://nodeschool.io/zh-cn/
 
@@ -695,3 +695,13 @@ https://github.com/williamkapke/node-compat-table
 ### any-rule 常用正则大全, 支持vscode扩展插件
 vscode 插件dmeo
 https://github.com/any86/any-rule
+
+
+### linux 免密登录
+除了在目标机器的 `~/.ssh/authorized_key` 文件中添加本机的公钥，还可以通过`ssh-copy-id -i ~/.ssh/id_rsa.pub 用户名@ip`  的方式自动添加，此命令会自动添加，判断是否重复添加已经修改权限更方便
+
+wsl 中还可以配置一下 hosts文件 登录的时候会更加方便，wsl中设置启动默认的用户是 `debian config --default-user root` 切换到 `root`用户后可以用 `passwd`更改密码
+
+https://blog.csdn.net/m0_37590135/article/details/74275859
+https://blog.csdn.net/qxoqx/article/details/52779710
+https://blog.csdn.net/hao45e/article/details/79992803
