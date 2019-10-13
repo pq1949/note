@@ -705,3 +705,24 @@ wsl 中还可以配置一下 hosts文件 登录的时候会更加方便，wsl中
 https://blog.csdn.net/m0_37590135/article/details/74275859
 https://blog.csdn.net/qxoqx/article/details/52779710
 https://blog.csdn.net/hao45e/article/details/79992803
+
+
+### 让终端命令也走代理的方式
+不同系统内置的命令使用的环境变量可能不同，这里直接全部都设置一下
+.zshrc 里面加入下面的命令，然后执行一下 . ./zshrc 生效后即可通过 `proxy`  `unproxy` 启用和关闭终端代理了
+```
+alias proxy='export all_proxy=socks5://127.0.0.1:1086 \
+	export HTTP_PROXY=$all_proxy \
+	export http_proxy=$all_proxy \
+	export https_proxy=$all_proxy \
+	export HTTP_PROXY=$all_proxy \
+	export HTTPS_PROXY=$all_proxy'
+
+alias unproxy='unset all_proxy \
+	unset ALL_PROXY \
+	unset http_proxy \
+	unset https_proxy \
+	unset HTTP_PROXY \
+	unset HTTPS_PROXY'
+```
+https://github.com/mrdulin/blog/issues/18
