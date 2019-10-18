@@ -726,3 +726,10 @@ alias unproxy='unset all_proxy \
 	unset HTTPS_PROXY'
 ```
 https://github.com/mrdulin/blog/issues/18
+
+
+### vi 中不能用鼠标复制了
+试试 `vi ` 中设置  `set mouse=c`
+http://vimdoc.sourceforge.net/htmldoc/options.html
+
+`vi` 大小写 `guw` `gUw` 单词  `gul` `gUl` 当前字符  `guu`  `gUU` 当前行
