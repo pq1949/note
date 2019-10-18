@@ -733,3 +733,5 @@ https://github.com/mrdulin/blog/issues/18
 http://vimdoc.sourceforge.net/htmldoc/options.html
 
 `vi` 大小写 `guw` `gUw` 单词  `gul` `gUl` 当前字符  `guu`  `gUU` 当前行
+`vi` 跳转到行 `gg` 首行   `G` 未行   `5G`第5行
+`vi` 删除 `x` 单个字符  `dw` 单词  `dd` 当前行  `5dd` 删除5行
