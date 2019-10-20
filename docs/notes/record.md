@@ -735,3 +735,52 @@ http://vimdoc.sourceforge.net/htmldoc/options.html
 `vi` 大小写 `guw` `gUw` 单词  `gul` `gUl` 当前字符  `guu`  `gUU` 当前行
 `vi` 跳转到行 `gg` 首行   `G` 未行   `5G`第5行
 `vi` 删除 `x` 单个字符  `dw` 单词  `dd` 当前行  `5dd` 删除5行
+
+### mac 同步时间
+
+sudo sntp -sS time.apple.com 命令来强制更新系统时间。
+
+https://superuser.com/questions/155785/mac-os-x-date-time-synchronization/633837#633837
+
+
+### linux 文件说明
+
+```
+
+d代表的是目录(directroy)
+-代表的是文件(regular file)
+s代表的是套字文件(socket)
+p代表的管道文件(pipe)或命名管道文件(named pipe)
+l代表的是符号链接文件(symbolic link)
+b代表的是该文件是面向块的设备文件(block-oriented device file)
+c代表的是该文件是面向字符的设备文件(charcter-oriented device file)
+```
+
+```
+-rw------- (600)      只有拥有者有读写权限。
+-rw-r--r-- (644)      只有拥有者有读写权限；而属组用户和其他用户只有读权限。
+-rwx------ (700)     只有拥有者有读、写、执行权限。
+-rwxr-xr-x (755)    拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。
+-rwx--x--x (711)    拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。
+-rw-rw-rw- (666)   所有用户都有文件读、写权限。
+-rwxrwxrwx (777)  所有用户都有读、写、执行权限。
+```
+
+https://blog.csdn.net/u013197629/article/details/73608613
+
+### 保持ssh不自动断开
+
+如果是想让主机所有用户都生效，修改/etc/ssh/ssh_config
+如果只想让本人生效，则修改 ~/.ssh/config
+
+```
+Host *
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+```
+
+如果此处还有一个配置项叫 SendEnv LANG LC_*，老高建议最好注释掉，否则如果本地是中文环境，而服务器没有对应的中文语言选项时系统可能会出现很多莫名其妙的BUG，所以保持原始英文语言环境为上。
+
+https://blog.phpgao.com/keep_connect_ssh.html
+
+http://bluebiu.com/blog/linux-ssh-session-alive.html
