@@ -825,7 +825,7 @@ https://blog.phpgao.com/keep_connect_ssh.html
 http://bluebiu.com/blog/linux-ssh-session-alive.html
 
 
-### docker
+### centos install docker
 1. 安装
    step by step
    ```
@@ -852,6 +852,78 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
 
+
+### debian install docker
+```
+sudo apt-get remove docker docker-engine docker.io
+
+sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian $(lsb_release -cs) stable"
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+apt list --installed |grep docker
+apt list --installed |grep container
+
+dpkg -l | grep docker
+dpkg -l | grep container
+
+sudo systemctl status docker
+sudo systemctl start docker (wsl 中需要再win10中安装客户端)
+
+sudo docker run hello-world
+```
+
+https://mirror.tuna.tsinghua.edu.cn/help/docker-ce/
+
+https://docs.docker.com/install/linux/docker-ce/debian/
+
+
+### win10 install docker
+
+1 下载地址
+https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe (使用迅雷或者360极速浏览器下载速度会变块)
+
+https://hub.docker.com/?overlay=onboarding
+
+
+2. docker setting 中 Expose daemon on tcp://localhost:2375 without TLS
+   wsl 中的 profile 添加 `export DOCKER_HOST=127.0.0.1:2375`
+   生效  `. ./.zshrc`
+3. `docker run hello-world`
+
+https://medium.com/%E4%B8%80%E5%80%8B%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E9%9A%A8%E6%89%8B%E7%AD%86%E8%A8%98/wsl-%E8%88%87-windows-%E7%9A%84%E5%AE%8C%E7%BE%8E%E9%9B%99%E7%B5%90%E5%90%88-%E5%9C%A8wsl-%E4%B8%AD%E5%AE%89%E8%A3%9D-docker-e722e87ffa3b
+https://zhuanlan.zhihu.com/p/61542198
+
+
+### docker 教程
+
+https://docker-curriculum.com/#setting-up-your-computer
+
+https://github.com/yeasy/docker_practice
+https://yeasy.gitbooks.io/docker_practice/introduction/what.html
+
+https://github.com/jaywcjlove/docker-tutorial
+
+### docker install  Jenkins
+
+Docker Hub 上的官方 Jenkins 镜像
+`docker pull jenkins/jenkins`
+https://jenkins.io/zh/blog/2018/12/10/the-official-Docker-image/
+
+
+Jenkins 插件安装失败
+https://www.cnblogs.com/sxdcgaq8080/p/10489326.html
+
+
+jenkins插件下载镜像加速
+`https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json`
+https://blog.csdn.net/you227/article/details/81076032
 
 ### 解决df -h卡死问题
 解决方式
