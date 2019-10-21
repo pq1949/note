@@ -706,6 +706,45 @@ https://blog.csdn.net/m0_37590135/article/details/74275859
 https://blog.csdn.net/qxoqx/article/details/52779710
 https://blog.csdn.net/hao45e/article/details/79992803
 
+### linux ssh config
+
+```
+Host example                       # 关键词
+    HostName example.com           # 主机地址
+    User root                      # 用户名
+    # IdentityFile ~/.ssh/id_ecdsa # 认证文件
+    # Port 22                      # 指定端口
+```
+
+管理多组密钥对
+
+```
+Host github
+    HostName %h.com
+    IdentityFile ~/.ssh/id_ecdsa_github
+    User git
+Host coding
+    HostName git.coding.net
+    IdentityFile ~/.ssh/id_rsa_coding
+    User git
+```
+
+```
+# 原来
+$ git clone git@git.coding.net:deepzz/test.git
+
+# 现在
+$ git clone coding:deepzz/test.git
+```
+
+[Bad owner or permissions on .ssh/config的解决](https://my.oschina.net/lovewinner/blog/1118876)
+```
+sudo chmod 600 config
+```
+
+[SSH Config 那些你所知道和不知道的事](https://deepzz.com/post/how-to-setup-ssh-config.html)
+
+
 
 ### 让终端命令也走代理的方式
 不同系统内置的命令使用的环境变量可能不同，这里直接全部都设置一下
