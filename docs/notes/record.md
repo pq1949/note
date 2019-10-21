@@ -921,9 +921,13 @@ Jenkins 插件安装失败
 https://www.cnblogs.com/sxdcgaq8080/p/10489326.html
 
 
+
 jenkins插件下载镜像加速
 `https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json`
 https://blog.csdn.net/you227/article/details/81076032
+
+the status of Jenkins mirrors
+http://mirrors.jenkins-ci.org/status.html
 
 ### 解决df -h卡死问题
 解决方式
