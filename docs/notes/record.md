@@ -784,3 +784,57 @@ Host *
 https://blog.phpgao.com/keep_connect_ssh.html
 
 http://bluebiu.com/blog/linux-ssh-session-alive.html
+
+
+### docker
+1. 安装
+   step by step
+   ```
+   sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   sudo yum install docker-ce docker-ce-cli containerd.io
+   ```
+
+  by script
+  `curl -fsSL https://get.docker.com -o get-docker.sh`
+  `sudo sh get-docker.sh`
+2. 查看
+   `sudo yum list installed | grep docker`
+3. 启动
+   `sudo systemctl start docker`  （开机自启 `sudo systemctl enable docker`）
+   `ps -ef |grep docker`
+   `sudo systemctl status docker`
+4. 设置不用输入 sudo
+    把当前用户添加到 docker 组中
+    `sudo usermod -aG docker leo`
+5. 卸载
+   `sudo yum remove docker-ce-cli containerd.io docker-ce`
+
+https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
+
+
+### 解决df -h卡死问题
+解决方式
+首先就是使用strace去追踪到底在哪里卡住了
+
+`strace df -h`
+
+如果没有这个命令那么去安装一xia
+
+`yum install strace`
+
+之后就找到了卡住的地方
+
+```
+stat("/", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+stat("/sys/fs/selinux", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/proc/sys/fs/binfmt_misc",
+```
+
+接着百度,重启想下面这个服务就好
+
+`systemctl restart proc-sys-fs-binfmt_misc.automount`
+
+https://www.jianshu.com/p/b50daaf322f2
+https://blog.arstercz.com/centos7-%E7%B3%BB%E7%BB%9F-df-hang-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E/
