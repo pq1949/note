@@ -901,6 +901,24 @@ https://medium.com/%E4%B8%80%E5%80%8B%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%
 https://zhuanlan.zhihu.com/p/61542198
 
 
+### docker 源 国内
+
+```
+/etc/docker/daemon.json  中添加如下配置，没有这个文件则新建一个
+
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+}
+```
+重新启动 docker
+
+`sudo systemctl restart docker`
+
+http://mirrors.ustc.edu.cn/help/dockerhub.html?highlight=docker
+https://www.jianshu.com/p/df75f9b5fcf6
+https://www.jianshu.com/p/405fe33b9032
+https://yeasy.gitbooks.io/docker_practice/install/mirror.html
+
 ### docker 教程
 
 https://docker-curriculum.com/#setting-up-your-computer
@@ -916,6 +934,7 @@ Docker Hub 上的官方 Jenkins 镜像
 `docker pull jenkins/jenkins`
 https://jenkins.io/zh/blog/2018/12/10/the-official-Docker-image/
 
+https://github.com/jenkinsci/docker/blob/master/README.md
 
 Jenkins 插件安装失败
 https://www.cnblogs.com/sxdcgaq8080/p/10489326.html
@@ -947,9 +966,32 @@ stat("/sys/fs/selinux", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
 stat("/proc/sys/fs/binfmt_misc",
 ```
 
-接着百度,重启想下面这个服务就好
+重启下面这个服务就好
 
 `systemctl restart proc-sys-fs-binfmt_misc.automount`
 
 https://www.jianshu.com/p/b50daaf322f2
 https://blog.arstercz.com/centos7-%E7%B3%BB%E7%BB%9F-df-hang-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E/
+
+
+### Mac VSCode 更新失败
+权限问题
+
+`ls -lrt ~/Library/Caches | grep vscode -i`
+查看可知 `com.microsoft.VSCode.ShipIt` 的权限不对 ，修改成当前用户即可
+`sudo chown $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt/`
+
+
+### nload - 实时监控Linux网络带宽使用情况
+
+`yum install nload`
+
+```
+$ nload
+Or
+$ nload eth0
+```
+一次显示多个设备; 不显示流量图，使用-m选项
+`nload -m`
+
+https://www.howtoing.com/nload-monitor-linux-network-traffic-bandwidth-usage
