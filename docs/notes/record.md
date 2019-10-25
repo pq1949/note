@@ -942,6 +942,9 @@ docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `doc
 http://www.dockone.io/article/431
 https://cloud.tencent.com/developer/article/1199395
 
+https://www.jianshu.com/p/0ecedb072c69
+https://blog.container-solutions.com/running-docker-in-jenkins-in-docker
+
 http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
 https://github.com/jpetazzo/dind
 
