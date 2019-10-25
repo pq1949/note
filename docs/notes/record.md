@@ -829,7 +829,7 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 1. 安装
    step by step
    ```
-   sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   sudo yum install -y yum-utils device-mapper-persistent-data lvm2 wget
    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    sudo yum install docker-ce docker-ce-cli containerd.io
    ```
@@ -849,7 +849,12 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 5. 卸载
    `sudo yum remove docker-ce-cli containerd.io docker-ce`
 
+<<<<<<< HEAD
 https://cloud.tencent.com/developer/labs/lab/10054
+=======
+wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
+
+>>>>>>> 77fd8e10ae85a2bbe10df32e59dca694c592e1fa
 
 https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
@@ -913,14 +918,49 @@ https://medium.com/%E4%B8%80%E5%80%8B%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%
 https://zhuanlan.zhihu.com/p/61542198
 
 
+### docker 源 国内
+
+```
+/etc/docker/daemon.json  中添加如下配置，没有这个文件则新建一个
+
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+}
+```
+重新启动 docker
+
+`sudo systemctl restart docker`
+
+http://mirrors.ustc.edu.cn/help/dockerhub.html?highlight=docker
+https://www.jianshu.com/p/df75f9b5fcf6
+https://www.jianshu.com/p/405fe33b9032
+https://yeasy.gitbooks.io/docker_practice/install/mirror.html
+
 ### docker 教程
 
 https://docker-curriculum.com/#setting-up-your-computer
 
+docker install
 https://github.com/yeasy/docker_practice
 https://yeasy.gitbooks.io/docker_practice/introduction/what.html
 
 https://github.com/jaywcjlove/docker-tutorial
+
+
+Docker-in-Docker
+docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `docker deamon` 是错误的做法 ，正确的`docker in docker` 是利用`docker` 的`cs`架构，在容器里面的`docker` 链接宿主机的 `docker daemon`
+`docker run -v /var/run/docker.sock:/var/run/docker.sock  -itd centos:centos`
+
+或者这样，就不用再内部`docker`里面安装`docker-ce`了
+`docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker)`
+http://www.dockone.io/article/431
+https://cloud.tencent.com/developer/article/1199395
+
+https://www.jianshu.com/p/0ecedb072c69
+https://blog.container-solutions.com/running-docker-in-jenkins-in-docker
+
+http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
+https://github.com/jpetazzo/dind
 
 ### docker install  Jenkins
 
@@ -929,6 +969,7 @@ Docker Hub 上的官方 Jenkins 镜像
 `docker pull jenkins/jenkins:lts`
 https://jenkins.io/zh/blog/2018/12/10/the-official-Docker-image/
 
+https://github.com/jenkinsci/docker/blob/master/README.md
 
 Jenkins 插件安装失败
 https://www.cnblogs.com/sxdcgaq8080/p/10489326.html
@@ -966,9 +1007,32 @@ stat("/sys/fs/selinux", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
 stat("/proc/sys/fs/binfmt_misc",
 ```
 
-接着百度,重启想下面这个服务就好
+重启下面这个服务就好
 
 `systemctl restart proc-sys-fs-binfmt_misc.automount`
 
 https://www.jianshu.com/p/b50daaf322f2
 https://blog.arstercz.com/centos7-%E7%B3%BB%E7%BB%9F-df-hang-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E/
+
+
+### Mac VSCode 更新失败
+权限问题
+
+`ls -lrt ~/Library/Caches | grep vscode -i`
+查看可知 `com.microsoft.VSCode.ShipIt` 的权限不对 ，修改成当前用户即可
+`sudo chown $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt/`
+
+
+### nload - 实时监控Linux网络带宽使用情况
+
+`yum install nload`
+
+```
+$ nload
+Or
+$ nload eth0
+```
+一次显示多个设备; 不显示流量图，使用-m选项
+`nload -m`
+
+https://www.howtoing.com/nload-monitor-linux-network-traffic-bandwidth-usage
