@@ -849,6 +849,8 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 5. 卸载
    `sudo yum remove docker-ce-cli containerd.io docker-ce`
 
+https://cloud.tencent.com/developer/labs/lab/10054
+
 https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
 
@@ -862,6 +864,8 @@ sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-pr
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
 sudo add-apt-repository "deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian $(lsb_release -cs) stable"
+
+【curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun】 或者这样使用官方提供的镜像地址
 
 sudo apt-get update
 
@@ -883,6 +887,14 @@ https://mirror.tuna.tsinghua.edu.cn/help/docker-ce/
 
 https://docs.docker.com/install/linux/docker-ce/debian/
 
+
+ /etc/docker/daemon.json 中配置镜像
+
+ ```
+ {
+    "registry-mirrors": ["https://mirror.ccs.tencentyun.com"]
+}
+ ```
 
 ### win10 install docker
 
@@ -913,13 +925,17 @@ https://github.com/jaywcjlove/docker-tutorial
 ### docker install  Jenkins
 
 Docker Hub 上的官方 Jenkins 镜像
-`docker pull jenkins/jenkins`
+
+`docker pull jenkins/jenkins:lts`
 https://jenkins.io/zh/blog/2018/12/10/the-official-Docker-image/
 
 
 Jenkins 插件安装失败
 https://www.cnblogs.com/sxdcgaq8080/p/10489326.html
 
+
+密码位置
+`cat /var/jenkins_home/secrets/initialAdminPassword`
 
 
 jenkins插件下载镜像加速
@@ -928,6 +944,9 @@ https://blog.csdn.net/you227/article/details/81076032
 
 the status of Jenkins mirrors
 http://mirrors.jenkins-ci.org/status.html
+
+使用 Docker 部署 Jenkins
+https://trafficmgr.net/2019/02/01/docker-jenkins/
 
 ### 解决df -h卡死问题
 解决方式
