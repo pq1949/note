@@ -940,6 +940,7 @@ docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `doc
 或者这样，就不用再内部`docker`里面安装`docker-ce`了
 `docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker)`
 http://www.dockone.io/article/431
+https://cloud.tencent.com/developer/article/1199395
 
 http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
 https://github.com/jpetazzo/dind
