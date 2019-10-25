@@ -829,7 +829,7 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 1. 安装
    step by step
    ```
-   sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   sudo yum install -y yum-utils device-mapper-persistent-data lvm2 wget
    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    sudo yum install docker-ce docker-ce-cli containerd.io
    ```
@@ -848,6 +848,9 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
     `sudo usermod -aG docker leo`
 5. 卸载
    `sudo yum remove docker-ce-cli containerd.io docker-ce`
+
+wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
+
 
 https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
@@ -923,10 +926,23 @@ https://yeasy.gitbooks.io/docker_practice/install/mirror.html
 
 https://docker-curriculum.com/#setting-up-your-computer
 
+docker install
 https://github.com/yeasy/docker_practice
 https://yeasy.gitbooks.io/docker_practice/introduction/what.html
 
 https://github.com/jaywcjlove/docker-tutorial
+
+
+Docker-in-Docker
+docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `docker deamon` 是错误的做法 ，正确的`docker in docker` 是利用`docker` 的`cs`架构，在容器里面的`docker` 链接宿主机的 `docker daemon`
+`docker run -v /var/run/docker.sock:/var/run/docker.sock  -itd centos:centos`
+
+或者这样，就不用再内部`docker`里面安装`docker-ce`了
+`docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker)`
+http://www.dockone.io/article/431
+
+http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
+https://github.com/jpetazzo/dind
 
 ### docker install  Jenkins
 
