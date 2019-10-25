@@ -849,12 +849,9 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 5. 卸载
    `sudo yum remove docker-ce-cli containerd.io docker-ce`
 
-<<<<<<< HEAD
 https://cloud.tencent.com/developer/labs/lab/10054
-=======
 wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
 
->>>>>>> 77fd8e10ae85a2bbe10df32e59dca694c592e1fa
 
 https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7
