@@ -826,11 +826,21 @@ http://bluebiu.com/blog/linux-ssh-session-alive.html
 
 
 ### centos install docker
+卸载旧版本
+  `sudo yum remove docker docker-common docker-selinux docker-engine`
+
 1. 安装
    step by step
    ```
    sudo yum install -y yum-utils device-mapper-persistent-data lvm2 wget
+
    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   or
+   wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
+
+  把软件仓库地址替换为 TUNA:
+  sudo sed -i 's+download.docker.com+mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+
    sudo yum install docker-ce docker-ce-cli containerd.io
    ```
 
@@ -1033,3 +1043,10 @@ $ nload eth0
 `nload -m`
 
 https://www.howtoing.com/nload-monitor-linux-network-traffic-bandwidth-usage
+
+
+### 获取当前操作系统版本号
+`lsb_release -a | -cs`
+默认没有安装的话 `centos`执行下面命令进行安装 `lsb_release`
+
+`yum install -y redhat-lsb`
