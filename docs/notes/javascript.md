@@ -32,6 +32,10 @@
 4. [O2前端规范文档](https://github.com/o2team/guide)
 5. [JavaScript规范](https://github.com/adamlu/javascript-style-guide)
 6. [airbnb/javascript](https://github.com/airbnb/javascript?utm_source=gold_browser_extension)
+
+### 文档着重构建一个完整的「前端技术架构图谱」，方便 F2E(Front End Engineering又称FEE、F2E) 学习与进阶。
+https://github.com/f2e-awesome/knowledge
+
 ## JSTips ⭐️⭐️⭐️
 
 http://www.jstips.co/

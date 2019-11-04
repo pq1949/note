@@ -44,3 +44,9 @@ https://developers.chrome.com/extensions/
 
 ### chrome tips
 https://umaar.com/dev-tips/#archive
+
+
+### Performance 网站优化
+http://jartto.wang/2019/09/08/web-optimization-tools/
+
+http://jartto.wang/2019/02/16/web-optimization/
