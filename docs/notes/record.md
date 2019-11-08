@@ -348,7 +348,7 @@ alias o="/d/Program\" \"Files\" \"\(x86\)/Notepad++/notepad++.exe"
 ubuntu或者debian，安装之前需要 进入应用，选择程序和功能，点击启用或关闭Windows功能，勾选适用于Linux的Windows子系统
 ![](../imgs/Snipaste_2019-05-08_16-34-55.png)
 
-`ubuntu`和`debian`的目录在`windows`中是在这个问题
+`ubuntu`和`debian`的目录在`windows`中下面对应的目录里
 
 ```
 C:\Users\Administrator\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs
@@ -362,8 +362,13 @@ C:\Users\Administrator\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76
 
 `\\wsl$` 这个就是安装的系统共享的目录
 
+WSL 使用指南
 https://github.com/microsoft/Terminal/issues/489#issue-441161390
 
+
+wsl 中还可以配置一下 hosts文件 登录的时候会更加方便，wsl中设置启动默认的用户是 `debian config --default-user root` 切换到 `root`用户后可以用 `passwd`更改密码
+
+https://zhuanlan.zhihu.com/p/36482795
 
 ### windows 批量重命名
 
@@ -953,6 +958,12 @@ https://yeasy.gitbooks.io/docker_practice/introduction/what.html
 
 https://github.com/jaywcjlove/docker-tutorial
 
+30 分钟快速入门 Docker 教程
+https://juejin.im/post/5cacbfd7e51d456e8833390c
+
+非常详细的Docker学习教程
+https://blog.csdn.net/zmx729618/article/details/72930474
+
 
 Docker-in-Docker
 docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `docker deamon` 是错误的做法 ，正确的`docker in docker` 是利用`docker` 的`cs`架构，在容器里面的`docker` 链接宿主机的 `docker daemon`
@@ -968,6 +979,11 @@ https://blog.container-solutions.com/running-docker-in-jenkins-in-docker
 
 http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
 https://github.com/jpetazzo/dind
+
+
+10张图带你深入理解Docker容器和镜像
+http://dockone.io/article/783
+
 
 ### docker install  Jenkins
 
@@ -1050,3 +1066,17 @@ https://www.howtoing.com/nload-monitor-linux-network-traffic-bandwidth-usage
 默认没有安装的话 `centos`执行下面命令进行安装 `lsb_release`
 
 `yum install -y redhat-lsb`
+
+
+### 无服务 serlvess
+https://docs.parseplatform.org/parse-server/guide/#using-parse-sdks-with-parse-server
+
+https://jimmysong.io/posts/what-is-serverless/
+
+
+### 开发一个高质量的前端组件，这些姿势一定要知道
+https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247493007&amp;idx=1&amp;sn=caf4e39e99dc9731e46e7661fafe3fd4&amp;chksm=f95250ccce25d9da61e597fb1caeebfc61e265a0de85f92f1d9e7841212fd13c4f3748abebd7#rd
+
+
+### Spring Boot 揭秘与实战 源代码
+https://github.com/lianggzone/springboot-action
