@@ -22,6 +22,10 @@
 
     ![redux](../imgs/redux.png)
 
+### Redux Style Guide
+https://redux.js.org/style-guide/style-guide
+
+
 ### Hooks, React Render props, HOC,  Mixins
 
  * [[译] 使用 Render props 吧！](https://juejin.im/post/5a3087746fb9a0450c4963a5)
