@@ -25,6 +25,9 @@
 ### Redux Style Guide
 https://redux.js.org/style-guide/style-guide
 
+### redux-toolkit(the official, opinionated, batteries-included toolset for efficient Redux development)
+https://github.com/reduxjs/redux-toolkit
+
 
 ### Hooks, React Render props, HOC,  Mixins
 
