@@ -15,4 +15,4 @@
 * [jsCode](/jscode/snippet)
 * [chrome](/notes/chrome)
 * [git](/notes/git)
-* [linux](https://github.com/pq1949/guide)
+* [linux](/notes/linux)
