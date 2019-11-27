@@ -82,3 +82,16 @@ git merge upstream/master
 ```
 5、上传到自己的远程仓库中
 `git push `
+
+### centos 利用yum更新git
+
+
+```
+#安装源
+yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
+#安装git
+yum install git
+#更新git
+yum update git
+```
+https://my.oschina.net/tonystark/blog/1920556
