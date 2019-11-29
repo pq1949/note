@@ -965,6 +965,9 @@ https://juejin.im/post/5cacbfd7e51d456e8833390c
 https://blog.csdn.net/zmx729618/article/details/72930474
 
 
+免费 `docker` 练习
+https://labs.play-with-docker.com/
+
 Docker-in-Docker
 docker 里面安装docker 并且尝试通过`systemctl start docker` 启动 `docker deamon` 是错误的做法 ，正确的`docker in docker` 是利用`docker` 的`cs`架构，在容器里面的`docker` 链接宿主机的 `docker daemon`
 `docker run -v /var/run/docker.sock:/var/run/docker.sock  -itd centos:centos`
@@ -1080,3 +1083,6 @@ https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247493007&amp;idx=1&a
 
 ### Spring Boot 揭秘与实战 源代码
 https://github.com/lianggzone/springboot-action
+
+### Why You Should Use ESLint, Prettier and EditorConfig Together
+https://blog.theodo.com/2019/08/why-you-should-use-eslint-prettier-and-editorconfig-together/
