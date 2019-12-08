@@ -1086,3 +1086,9 @@ https://github.com/lianggzone/springboot-action
 
 ### Why You Should Use ESLint, Prettier and EditorConfig Together
 https://blog.theodo.com/2019/08/why-you-should-use-eslint-prettier-and-editorconfig-together/
+
+### Using ESLint and Prettier in a TypeScript Project
+https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
+
+### Empower Your Dev Environment with ESLint, Prettier and EditorConfig with No Conflicts
+https://blog.theodo.com/2019/08/empower-your-dev-environment-with-eslint-prettier-and-editorconfig-with-no-conflicts/
