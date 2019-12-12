@@ -458,3 +458,26 @@ https://zhuanlan.zhihu.com/p/84176287
 
 ### Serverless For Frontend 前世今生
 https://zhuanlan.zhihu.com/p/77095720
+
+
+### 滑动加载的判断
+
+一般都是取这三个值进行计算需不需要加载数据
+```js
+const { clientHeight, scrollHeight, scrollTop } = values
+if(scrollTop + clientHeight >= scrollHeight) {
+  getData()
+}
+```
+但是需要注意这个 `scrollTop` ,因为这个值有可能是小数
+https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
+
+所以这样写更合适
+
+```js
+const { clientHeight, scrollHeight, scrollTop } = values
+// 开始以为只要四舍五入即可，毕竟另外两个值也是浏览器四舍五入的，但是反复测试不同缩放比例 100% 120% 200% 400% 等时发现有时候四舍五入后还是不行，所以这里加了个1
+if(Math.round(scrollTop + 1) + clientHeight >= scrollHeight) {
+  getData()
+}
+```

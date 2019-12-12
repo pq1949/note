@@ -95,3 +95,11 @@ yum install git
 yum update git
 ```
 https://my.oschina.net/tonystark/blog/1920556
+
+
+### 查看 git 配置是哪个文件生效的
+```
+$ git config --get-all --show-origin core.autocrlf
+file:"C:\\ProgramData/Git/config"       true
+file:C:/Users/Administrator/.gitconfig  false
+```
