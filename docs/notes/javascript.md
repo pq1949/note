@@ -205,6 +205,8 @@ const a = Array.apply(null, Array(3)); // [undefined, undefined, undefined]
 arr.map((elem, index) => index); // [0, 1, 2, 3]
 
 const b = Array(3).fill() // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
+
+const c = Array.from({length:3}) //https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from
 ```
 
 http://www.jstips.co/en/javascript/3-array-hacks/
