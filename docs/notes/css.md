@@ -107,3 +107,15 @@ https://css-tricks.com/custom-scrollbars-in-webkit/
 ### 使用Flexible实现手淘H5页面的终端适配
 https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html
 https://github.com/amfe/lib-flexible
+
+### 全站置灰
+```css
+
+html {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+  filter: gray;
+}
+```

@@ -51,3 +51,13 @@ git rebase https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%8
 ### 前端 100 问：能搞懂 80% 的请把简历给我
 
 https://juejin.im/post/5d23e750f265da1b855c7bbe?utm_source=gold_browser_extension
+
+
+### 三次握手与四次挥手
+https://hit-alibaba.github.io/interview/basic/network/TCP.html
+https://blog.csdn.net/qzcsu/article/details/72861891?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+https://blog.csdn.net/qq_38950316/article/details/81087809?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+https://juejin.im/post/5d9c284b518825095879e7a5
+
+### 浏览器的工作原理：新式网络浏览器幕后揭秘
+https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
