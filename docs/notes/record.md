@@ -1092,3 +1092,10 @@ https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-projec
 
 ### Empower Your Dev Environment with ESLint, Prettier and EditorConfig with No Conflicts
 https://blog.theodo.com/2019/08/empower-your-dev-environment-with-eslint-prettier-and-editorconfig-with-no-conflicts/
+
+
+### pc微信浏览器调试方法
+
+pc微信浏览器无法打开开发者工具，可以用这个工具查看一下需要debug页面的控制台错误
+
+https://github.com/Tencent/vConsole

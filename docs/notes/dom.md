@@ -26,7 +26,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLInputElement/setSelectionRa
 https://segmentfault.com/q/1010000003904393/a-1020000003904469
 
 
-
-
 ### IE的伪元素设置 `display table` 无效
 https://stackoverflow.com/questions/29379602/in-ie11-using-pseudo-element-before-and-displaytable-cell-and-glyphicons-cont
+
+
+### append appendChild
+
+- ParentNode.append()允许追加  DOMString 对象，而 Node.appendChild() 只接受 Node 对象。
+- ParentNode.append() 没有返回值，而 Node.appendChild() 返回追加的 Node 对象。
+- ParentNode.append() 可以追加多个节点和字符串，而 Node.appendChild() 只能追加一个节点。
+-  append 兼容性没有appendChild高，在微信的pc浏览器中 dom元素没有append方法， 只支持  appendChild
