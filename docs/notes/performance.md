@@ -34,3 +34,12 @@ https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/
 
 ### 实战篇 - 如何实现和淘宝移动端一样的模块化加载 （task-silce）
 https://juejin.im/post/5d33fd0f5188256e820c80d4?utm_source=gold_browser_extension
+
+
+### defer  async
+
+https://javascript.info/script-async-defer
+
+
+### Measure Performance with the RAIL Model
+https://developers.google.com/web/fundamentals/performance/rail?utm_source=devtools#goals-and-guidelines
