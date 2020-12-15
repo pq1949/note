@@ -1099,3 +1099,12 @@ https://blog.theodo.com/2019/08/empower-your-dev-environment-with-eslint-prettie
 pc微信浏览器无法打开开发者工具，可以用这个工具查看一下需要debug页面的控制台错误
 
 https://github.com/Tencent/vConsole
+
+### meta http-equiv="Cache-Control" Pragma Expires not work
+
+```js
+<meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+```
+https://stackoverflow.com/questions/49547/how-do-we-control-web-page-caching-across-all-browsers
