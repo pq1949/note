@@ -103,3 +103,34 @@ $ git config --get-all --show-origin core.autocrlf
 file:"C:\\ProgramData/Git/config"       true
 file:C:/Users/Administrator/.gitconfig  false
 ```
+
+### git撤销merge,彻底学会git revert的用法
+
+revert 可以取消指定的某次提交内容。
+
+当讨论 revert 时，需要分两种情况，因为 commit 分为两种：一种是常规的 commit，也就是使用 git commit 提交的 commit；另一种是 merge commit，在使用 git merge 合并两个分支之后，你将会得到一个新的 merge commit。
+
+merge commit 和普通 commit 的不同之处在于 merge commit 包含两个 parent commit，代表该 merge commit 是从哪两个 commit 合并过来的
+
+```
+git show bd86846
+commit bd868465569400a6b9408050643e5949e8f2b8f5
+Merge: ba25a9d 1c7036f
+```
+revert 常规 commit
+使用 git revert <commit id> 即可，git 会生成一个新的 commit，将指定的 commit 内容从当前分支上撤除。
+
+revert merge commit
+revert merge commit 有一些不同，这时需要添加 -m 选项以代表这次 revert 的是一个 merge commit
+
+但如果直接使用 git revert ，git 也不知道到底要撤除哪一条分支上的内容，这时需要指定一个 parent number 标识出"主线"，主线的内容将会保留，而另一条分支的内容将被 revert。
+
+如上面的例子中，从 git show 命令的结果中可以看到，merge commit 的 parent 分别为 ba25a9d 和 1c7036f，其中 ba25a9d 代表 master 分支（从图中可以看出），1c7036f 代表 will-be-revert 分支。需要注意的是 -m 选项接收的参数是一个数字，数字取值为 1 和 2，也就是 Merge 行里面列出来的第一个还是第二个。
+
+我们要 revert will-be-revert 分支上的内容，即 保留主分支，应该设置主分支为主线，操作如下：
+
+```
+git revert -m 1 bd86846
+```
+
+https://www.cnblogs.com/bescheiden/articles/10563651.html
