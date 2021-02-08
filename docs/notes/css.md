@@ -122,3 +122,30 @@ html {
 
 ### CSS 字体资源加载优化  font-display:  wrap
 https://css-tricks.com/almanac/properties/f/font-display/
+
+### 禁用移动端长按图片弹出图片或者系统菜单
+
+Safari中可以添加这样的样式
+```css
+*{
+  -webkit-touch-callout: none;
+}
+```
+但是微信中或者安卓手机长按还是能显示系统菜单
+
+最好的解决办法是在不需要长按弹出图片的img标签上加上
+
+```css
+img {
+  pointer-events: none;
+}
+```
+但是这样会使得图片的点击事件也失效，使用的时候得注意
+
+浏览器弹出图片或者系统菜单是在识别到img标签触发的，所以还有一种改法是把图片换成div标签，然后图片设置为div的背景图片
+
+```css
+div{
+  background: url('xxx.png') 50% 50% / 100% auto no-repeat;
+}
+```
