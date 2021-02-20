@@ -150,3 +150,27 @@ div{
 }
 ```
 https://mp.weixin.qq.com/s/IEfWFvPUGzTLFHKT2EuPTw
+
+
+### safari 中 fixed元素不显示的问题
+ 可能是fixed元素触发了某个规则没相对viewport定位，而是相对于其父元素的高度定位了，所以检查一下其父元素的高度或者改为 absolute 定位
+
+ https://www.cnblogs.com/coco1s/p/7358830.html
+
+
+### ios安全区域
+
+```css
+.header-gap-ios {
+  /* IOS11.2- */
+  height: constant(safe-area-inset-top);
+  /* IOS11.2+ */
+  height: env(safe-area-inset-top);
+}
+```
+另外还需要设置 viewport-fit=cover
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+```
+https://segmentfault.com/a/1190000014475895
