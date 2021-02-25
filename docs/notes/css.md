@@ -174,3 +174,32 @@ https://mp.weixin.qq.com/s/IEfWFvPUGzTLFHKT2EuPTw
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 ```
 https://segmentfault.com/a/1190000014475895
+
+
+###  单行和多行文本省略号
+
+```css
+{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+```
+
+```css
+{
+    width: 200px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+```
+https://juejin.cn/post/6932647134944886797?utm_source=gold_browser_extension
+
+
+### CSS样式分析
+https://cssstats.com/stats?url=https%3A%2F%2Flego.mgtv.com%2Fact%2F3_5_3%2F20210222mzssxs10.html%3Fact_name%3D20210222mzssxs10
