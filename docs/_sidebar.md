@@ -5,6 +5,7 @@
 * [dom](/notes/dom)
 * [javascript](/notes/javascript)
 * [typescript](/notes/typescript)
+* [webpack](/notes/webpack)
 * [network](/notes/network)
 * [performance](/notes/performance)
 * [react](/notes/react)
