@@ -175,6 +175,8 @@ https://mp.weixin.qq.com/s/IEfWFvPUGzTLFHKT2EuPTw
 ```
 https://segmentfault.com/a/1190000014475895
 
+https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+
 
 ###  单行和多行文本省略号
 
