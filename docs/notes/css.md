@@ -205,3 +205,8 @@ https://juejin.cn/post/6932647134944886797?utm_source=gold_browser_extension
 
 ### CSS样式分析
 https://cssstats.com/stats?url=https%3A%2F%2Flego.mgtv.com%2Fact%2F3_5_3%2F20210222mzssxs10.html%3Fact_name%3D20210222mzssxs10
+
+
+### 优惠券样式
+https://juejin.cn/post/6945023989555134494
+https://juejin.cn/post/6975882876193603597
