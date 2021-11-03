@@ -1108,3 +1108,11 @@ https://github.com/Tencent/vConsole
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 ```
 https://stackoverflow.com/questions/49547/how-do-we-control-web-page-caching-across-all-browsers
+
+
+### Beyond Compare 破解
+```
+cd Library/Application\ Support/Beyond\ Compare
+rm -rf registry.dat
+```
+https://blog.csdn.net/qq_27093465/article/details/85166780
