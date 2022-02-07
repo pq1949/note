@@ -43,3 +43,7 @@ https://javascript.info/script-async-defer
 
 ### Measure Performance with the RAIL Model
 https://developers.google.com/web/fundamentals/performance/rail?utm_source=devtools#goals-and-guidelines
+
+
+### 最全的前端性能定位总结
+https://juejin.cn/post/7052918009555320839?utm_source=gold_browser_extension
