@@ -1127,3 +1127,25 @@ https://juejin.cn/post/7052195023311339527?utm_source=gold_browser_extension
 
 ### 移动端H5网页开发常见问题汇总
 https://juejin.cn/post/7055599228478816270?utm_source=gold_browser_extension
+
+
+### 动画方案
+https://airbnb.design/lottie/
+https://svga.io/
+https://pag.io/
+
+
+### node-pre-gyp 安装失败
+
+node-pre-gyp ERR! Completion callback never invoked!
+node-pre-gyp ERR! System Darwin 20.3.0
+node-pre-gyp ERR! command "/Users/leo/.nvm/versions/node/v10.17.0/bin/node" "/Users/leo/IMGO/weixin_coupon_cashier/node_modules/fsevents/node_modules/node-pre-gyp/bin/node-pre-gyp" "install" "--fallback-to-build"
+node-pre-gyp ERR! cwd /Users/leo/IMGO/weixin_coupon_cashier/node_modules/fsevents
+node-pre-gyp ERR! node -v v10.17.0
+node-pre-gyp ERR! node-pre-gyp -v v0.9.1
+node-pre-gyp ERR! This is a bug in `node-pre-gyp`.
+node-pre-gyp ERR! Try to update node-pre-gyp and file an issue if it does not help:
+node-pre-gyp ERR!     <https://github.com/mapbox/node-pre-gyp/issues>
+
+
+https://github.com/mapbox/node-pre-gyp/issues/367
