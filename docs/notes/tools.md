@@ -20,3 +20,15 @@ https://apis.guru/graphql-voyager/
 2. carnac 屏幕上显示按键(window) https://github.com/Code52/carnac
 3. obs 视频直播和推流 https://obsproject.com/download  https://chocolatey.org/packages/obs-studio
 4. HandBrake 视频压缩 https://handbrake.fr/
+
+
+### 文本编辑器
+
+
+1.  meta(facebook) https://lexical.dev/
+2.  wangEditor  http://www.wangeditor.com/
+
+### online code editor
+
+1. microsoft  monaco-editor  https://microsoft.github.io/monaco-editor/index.html
+2.  CodeFlask  代码高亮编辑器 https://github.com/kazzkiq/CodeFlask
