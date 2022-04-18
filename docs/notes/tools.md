@@ -27,7 +27,8 @@ https://apis.guru/graphql-voyager/
 
 1.  meta(facebook) https://lexical.dev/
 2.  wangEditor  http://www.wangeditor.com/
-
+3.  draftjs(facebook) https://draftjs.org/
+4. prosemirror  https://prosemirror.net/   https://docs.yjs.dev/ecosystem/editor-bindings/prosemirror
 ### online code editor
 
 1. microsoft  monaco-editor  https://microsoft.github.io/monaco-editor/index.html

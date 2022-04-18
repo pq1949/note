@@ -1155,3 +1155,13 @@ https://github.com/mapbox/node-pre-gyp/issues/367
 ### 国内低代码平台
 
 https://github.com/taowen/awesome-lowcode
+
+
+### monorepo
+
+https://monorepo.tools/
+
+
+### chrome 历史版本记录
+
+https://en.wikipedia.org/wiki/Google_Chrome_version_history

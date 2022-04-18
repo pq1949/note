@@ -18,3 +18,7 @@ cat vip.log.mgtv.com-access.log-20211111 | awk -F '~A' '{print $5}' | awk -F 'uu
 
 https://man.linuxde.net/
 https://wangchujiang.com/linux-command/c/awk.html
+
+
+###  Linux SysOps Handbook
+https://abarrak.gitbook.io/linux-sysops-handbook
