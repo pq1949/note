@@ -275,13 +275,6 @@ https://createapp.dev/
 ### css裁剪路径 ⭐️⭐️⭐️
 
 https://bennettfeely.com/clippy/
-
-
-### 正则表达式
-
-http://refiddle.com/
-
-
 ### Package Diff
 
 https://diff.intrinsic.com/?pkg=&min=&max=
@@ -1165,3 +1158,26 @@ https://monorepo.tools/
 ### chrome 历史版本记录
 
 https://en.wikipedia.org/wiki/Google_Chrome_version_history
+
+
+### Autoplay policy in Chrome
+https://developer.chrome.com/blog/autoplay/
+
+
+### 动画框架
+
+1. Anime.js  https://github.com/juliangarnier/anime
+
+2. GSAP  https://github.com/greensock/GSAP
+
+https://www.codeinwp.com/blog/best-javascript-animation-libraries/
+
+
+### 苹果钱包动画
+https://codepen.io/gokulramesh94/pen/RwrzJGr
+
+### 贝塞尔曲线
+
+1 https://www.xuanfengge.com/easeing/easeing/
+2. https://xuanfengge.com/easeing/ceaser/
+3. https://cubic-bezier.com/#.17,.67,.83,.67

