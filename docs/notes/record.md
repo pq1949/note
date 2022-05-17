@@ -1181,3 +1181,10 @@ https://codepen.io/gokulramesh94/pen/RwrzJGr
 1 https://www.xuanfengge.com/easeing/easeing/
 2. https://xuanfengge.com/easeing/ceaser/
 3. https://cubic-bezier.com/#.17,.67,.83,.67
+
+
+### dom加水印
+
+https://github.com/saucxs/watermark-dom/blob/master/watermark.js
+
+https://www.npmjs.com/package/watermark-dom
