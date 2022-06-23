@@ -205,3 +205,7 @@ declare module 'my-ftp-deploy' {
     },
 }
 ```
+
+
+###  tsconfig.json 指南
+https://blog.csdn.net/qq_36380426/article/details/106486207

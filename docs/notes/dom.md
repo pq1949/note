@@ -36,3 +36,9 @@ https://stackoverflow.com/questions/29379602/in-ie11-using-pseudo-element-before
 - ParentNode.append() 没有返回值，而 Node.appendChild() 返回追加的 Node 对象。
 - ParentNode.append() 可以追加多个节点和字符串，而 Node.appendChild() 只能追加一个节点。
 -  append 兼容性没有appendChild高，在微信的pc浏览器中 dom元素没有append方法， 只支持  appendChild
+
+### document.hidden document.hasFocus()
+
+document.hidden -> 判断页面是否可见 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/hidden
+
+document.hasFocus -> 判断页面是否被用户选中 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/hasFocus

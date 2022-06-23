@@ -1188,3 +1188,15 @@ https://codepen.io/gokulramesh94/pen/RwrzJGr
 https://github.com/saucxs/watermark-dom/blob/master/watermark.js
 
 https://www.npmjs.com/package/watermark-dom
+
+
+### datagrip 激活
+
+licenses sever http://lic-server.mephi.ru
+
+http://blog.idejihuo.com/wp-content/uploads/2022/04/jetbrains-license-servers.txt
+
+
+### 可视化表单
+
+https://www.vform666.com/

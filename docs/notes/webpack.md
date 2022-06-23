@@ -103,3 +103,56 @@ https://github.com/sindresorhus/query-string/issues/239#issuecomment-583494423
 
 
 8. 修改后，真机验证也顺利通过！
+
+
+### webpack 多入口配置
+
+https://chinese.freecodecamp.org/news/an-introduction-to-webpack-multi-entry-configuration/
+
+
+```js
+const ENTRY_PATH = path.resolve(__dirname, '../src/pages')
+
+exports.entries = () => {
+  return glob.sync(ENTRY_PATH + '/*/*.js').reduce((acc, cur) => {
+    const filename = cur.replace(/.*\/(\w+)\/\w+\.js$/, (match, $1) => $1)
+    acc[filename] = cur
+    return acc
+  }, {})
+}
+
+
+exports.htmlPlugin = () => {
+  const files_name = glob.sync(ENTRY_PATH + '/*/*.js').map(file_path => file_path.replace(/.*\/(\w+)\/\w+\.js$/, (match, $1) => $1))
+  const titles_name = glob.sync(ENTRY_PATH + '/*/.title').reduce((acc, cur) => {
+    const filename = cur.replace(/.*\/(\w+)\/.title$/, (match, $1) => $1)
+    acc[filename] = fs.readFileSync(cur, 'utf-8')
+    return acc
+  }, {})
+  return files_name.map(file_name => {
+    let html_config = {
+      filename: `${file_name}.html`,
+      template: 'index.html',
+      chunks: [file_name],
+      inject: true,
+      title: titles_name[file_name]
+    }
+    if(process.env.NODE_ENV === 'production') {
+      html_config = merge(html_config, {
+        chunks: ['manifest', 'vendor'],
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true
+          // more options:
+          // https://github.com/kangax/html-minifier#options-quick-reference
+        },
+        // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+        chunksSortMode: 'dependency'
+      })
+    }
+    return new HtmlWebpackPlugin(html_config)
+  })
+}
+
+```
