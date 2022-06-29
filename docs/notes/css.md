@@ -244,3 +244,19 @@ input { font-family: 'x', 'Comic sans ms'; }
 
 ```
 https://scotthelme.co.uk/can-you-get-pwned-with-css/
+
+
+###  文字背景渐变
+
+```css
+
+background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-box-decoration-break: clone;
+
+
+
+linear-gradient(90deg, rgb(236, 0, 140), rgb(0, 112, 243))
+
+```

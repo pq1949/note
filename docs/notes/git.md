@@ -134,3 +134,8 @@ git revert -m 1 bd86846
 ```
 
 https://www.cnblogs.com/bescheiden/articles/10563651.html
+
+
+### git 操作场景
+
+https://ohshitgit.com/
