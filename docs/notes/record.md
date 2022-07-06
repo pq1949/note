@@ -1205,3 +1205,14 @@ https://www.vform666.com/
 ### apple pay 文档
 
 https://developer.apple.com/apple-pay/implementation/
+
+
+
+### Babel 插件手册
+
+https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md#toc-stages-of-babel
+
+### AST
+https://astexplorer.net/
+
+https://github.com/jamiebuilds/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js
