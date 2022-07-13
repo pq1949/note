@@ -260,3 +260,9 @@ background-clip: text;
 linear-gradient(90deg, rgb(236, 0, 140), rgb(0, 112, 243))
 
 ```
+
+### css border 的问题
+
+border最好不要使用rem，在低版本的chrome(46)中 0.9px 会直接不显示，所以使用 0.02rem 这样的在fontsize 5px的时候是正常的 一旦fontsize小于50px那么boder就无效了 ，此时borer相当于 0.96px
+
+高版本的chrome中无此问题
