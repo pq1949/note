@@ -188,3 +188,13 @@ plugin-transform-runtime 的regenerator  设置为 true 时 则会从 runtime-co
 ```js
 var _regenerator = _interopRequireDefault(require("@babel/runtime-corejs3/regenerator"));
 ```
+
+
+### es6 语法兼容统计表
+
+http://kangax.github.io/compat-table/es2016plus/
+
+
+### core-js@3, babel and a look into the future
+
+https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md
