@@ -198,3 +198,15 @@ http://kangax.github.io/compat-table/es2016plus/
 ### core-js@3, babel and a look into the future
 
 https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md
+
+
+### corejs
+
+https://github.com/zloirock/core-js#babelpreset-env
+
+Warning! If you use @babel/preset-env and @babel/runtime together, use corejs option only in one place since it's duplicate functionality and will cause conflicts.
+
+### Browserlist
+https://github.com/browserslist/browserslist
+
+https://browsersl.ist/
