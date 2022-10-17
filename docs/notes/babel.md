@@ -215,3 +215,14 @@ https://browsersl.ist/
 ### 简单实现 babel-plugin-import 插件
 
 https://juejin.cn/post/6905708824703795214
+
+
+https://segmentfault.com/a/1190000020237817
+
+### 文档注释
+
+https://typedoc.org/api/
+
+tsdoc
+
+jsdoc
