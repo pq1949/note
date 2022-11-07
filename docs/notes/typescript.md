@@ -209,3 +209,52 @@ declare module 'my-ftp-deploy' {
 
 ###  tsconfig.json 指南
 https://blog.csdn.net/qq_36380426/article/details/106486207
+
+### 函数类型
+
+```ts
+
+function greeter(fn: (a: string) => void) {
+  fn("Hello, World");
+}
+
+function printToConsole(s: string) {
+  console.log(s);
+}
+
+greeter(printToConsole);
+
+
+// =======
+
+type GreetFunction = (a: string) => void;
+function greeter(fn: GreetFunction) {
+  // ...
+}
+
+
+// ========
+type DescribableFunction = {
+  description: string;
+  (someArg: number): boolean;
+};
+function doSomething(fn: DescribableFunction) {
+  console.log(fn.description + " returned " + fn(6));
+}
+
+// ===
+
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+function fn(ctor: SomeConstructor) {
+  return new ctor("hello");
+}
+Try
+
+
+
+
+
+
+```
