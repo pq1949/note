@@ -258,3 +258,63 @@ Try
 
 
 ```
+
+
+### 类型合并  类型组合
+
+
+```ts
+interface Colorful {
+  color: string;
+}
+
+interface Circle {
+  radius: number;
+}
+
+interface ColorfulCircle extends Colorful, Circle {}
+```
+
+
+```ts
+interface Colorful {
+  color: string;
+}
+interface Circle {
+  radius: number;
+}
+
+type ColorfulCircle = Colorful & Circle;
+```
+
+
+## 接口继承与交叉类型（Interfaces vs Intersections） 区别
+
+```ts
+interface Colorful {
+  color: string;
+}
+
+interface ColorfulSub extends Colorful {
+  color: number
+}
+
+// Interface 'ColorfulSub' incorrectly extends interface 'Colorful'.
+// Types of property 'color' are incompatible.
+// Type 'number' is not assignable to type 'string'.
+
+```
+
+
+使用继承的方式，如果重写类型会导致编译错误，但交叉类型不会：
+
+```ts
+interface Colorful {
+  color: string;
+}
+
+type ColorfulSub = Colorful & {
+  color: number
+}
+```
+虽然不会报错，那 color 属性的类型是什么呢，答案是 never，取得是 string 和 number 的交集。
