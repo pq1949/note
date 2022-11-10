@@ -1160,9 +1160,35 @@ https://monorepo.tools/
 https://en.wikipedia.org/wiki/Google_Chrome_version_history
 
 
-### Autoplay policy in Chrome
+### Autoplay policy in Chrome  chroem 音频 视频自动播放策略
 https://developer.chrome.com/blog/autoplay/
 
+https://blog.csdn.net/qq_35052138/article/details/120205490
+
+![](https://vipcdn.mgtv.com/lego/20221110/lego/5fde3b4660e111eda3afecf4bbc30ba4.png)
+
+webview 可以关掉这个配置
+
+```js
+
+// android
+
+webview.getSettings.setMediaPlaybackRequiresUserGesture(false)
+
+// ios
+// WKWebView
+WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    config.allowsInlineMediaPlayback = YES;
+    config.mediaPlaybackRequiresUserAction = false;
+
+    displayWebView=[[WKWebView alloc] initWithFrame:rect configuration:config];
+    displayWebView.UIDelegate=self;
+    displayWebView.navigationDelegate=self;
+
+// UIWebView :
+[self.webView setMediaPlaybackRequiresUserAction:NO];
+
+```
 
 ### 动画框架
 
