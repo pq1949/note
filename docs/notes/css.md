@@ -266,3 +266,7 @@ linear-gradient(90deg, rgb(236, 0, 140), rgb(0, 112, 243))
 border最好不要使用rem，在低版本的chrome(46)中 0.9px 会直接不显示，所以使用 0.02rem 这样的在fontsize 5px的时候是正常的 一旦fontsize小于50px那么boder就无效了 ，此时borer相当于 0.96px
 
 高版本的chrome中无此问题
+
+### 100vh 的问题
+手机上会自动隐藏和显示地址栏，会导致 `100vh ` 不准确，可以使用 `window.innerHeight` 代替
+https://chanind.github.io/javascript/2019/09/28/avoid-100vh-on-mobile-web.html
