@@ -483,3 +483,68 @@ if(Math.round(scrollTop + 1) + clientHeight >= scrollHeight) {
   getData()
 }
 ```
+
+
+### 普通对象 PlainObject
+
+```js
+function isPlainObject(obj) {
+    return Object.prototype.toString.call(obj) === "[object Object]";
+}
+```
+Object.prototype.toString允许将对象转换为字符串。对于普通对象，当调用此方法时，总是返回[object object]。
+
+```js
+const runToString = (obj) => Object.prototype.toString.call(obj);
+console.log(runToString({})); // [object Object]
+console.log(runToString({ title: "devpoint" })); // [object Object]
+console.log(runToString({ title: "devpoint", author: { name: "devpoint" } })); // [object Object]
+```
+
+在Javascript中还有一些特殊的对象，如Array、String和RegExp，它们在Javascript引擎中具有特殊的设计。当它们调用Object.prototype.toString方法时，会返回不同的结果
+
+```js
+const runToString = (obj) => Object.prototype.toString.call(obj);
+console.log(runToString(["devpoint", 2021])); // [object Array]
+console.log(runToString(new String("devpoint"))); // [object String]
+console.log(runToString(/devpoint/)); // [object RegExp]
+```
+
+
+### 只执行一次
+
+```js
+function once(fn) {
+    let called = false;
+    return function () {
+        if (!called) {
+            called = true;
+            fn.apply(this, arguments);
+        }
+    };
+}
+
+function launchRocket() {
+    console.log("我已经执行了");
+}
+const launchRocketOnce = once(launchRocket);
+launchRocketOnce();
+launchRocketOnce();
+launchRocketOnce();
+
+```
+### 浏览器嗅探
+
+```js
+const inBrowser = typeof window !== "undefined";
+
+export const UA = inBrowser && window.navigator.userAgent.toLowerCase();
+export const isIE = UA && /msie|trident/.test(UA);
+export const isIE9 = UA && UA.indexOf("msie 9.0") > 0;
+export const isEdge = UA && UA.indexOf("edge/") > 0;
+export const isAndroid =  (UA && UA.indexOf("android") > 0) || weexPlatform === "android";
+export const isIOS =  (UA && /iphone|ipad|ipod|ios/.test(UA)) || weexPlatform === "ios";
+export const isChrome = UA && /chrome\/\d+/.test(UA) && !isEdge;
+export const isPhantomJS = UA && /phantomjs/.test(UA);
+export const isFF = UA && UA.match(/firefox\/(\d+)/);
+```
