@@ -1107,6 +1107,10 @@ https://stackoverflow.com/questions/49547/how-do-we-control-web-page-caching-acr
 ```
 cd Library/Application\ Support/Beyond\ Compare
 rm -rf registry.dat
+
+
+#or
+rm -rf ~/Library/Application\ Support/Beyond\ Compare/registry.dat
 ```
 https://blog.csdn.net/qq_27093465/article/details/85166780
 

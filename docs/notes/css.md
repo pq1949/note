@@ -270,3 +270,25 @@ border最好不要使用rem，在低版本的chrome(46)中 0.9px 会直接不显
 ### 100vh 的问题
 手机上会自动隐藏和显示地址栏，会导致 `100vh ` 不准确，可以使用 `window.innerHeight` 代替
 https://chanind.github.io/javascript/2019/09/28/avoid-100vh-on-mobile-web.html
+
+
+### 100vh 有可能失效的情况
+
+```js
+ setTimeout(() => {
+        document.title = title;
+        const iframe = document.createElement('iframe');
+        iframe.style.visibility = 'hidden';
+        iframe.style.width = '1px';
+        iframe.style.height = '1px';
+        iframe.src = 'https://act.mgtv.com/favicon.ico';
+        iframe.onload = () => {
+          setTimeout(() => {
+            document.body.removeChild(iframe);
+          }, 0);
+        };
+        document.body.appendChild(iframe);
+      }, 500);
+```
+
+ iframe 此代码可能会导致 最外层容器的 100vh 不符合预期，会莫名其妙多处一截
